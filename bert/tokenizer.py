@@ -12,7 +12,6 @@ bert_model = BertModel(bert_config)
 # but here BertModel & BertTokenizer are specifically desinged for bert based models to have more customization. 
 
 
-
 # inputs can be a setence, batch of sentence, 
 # pair of setence, paris of sentences 
 

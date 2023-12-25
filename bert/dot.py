@@ -12,3 +12,6 @@ configuration = model.config
 
 print(configuration)
 print(model)
+
+# adding additional comments to check vim 
+
