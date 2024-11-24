@@ -1,9 +1,8 @@
 from keras.layers import InputLayer,Sequential,Dense,Dropout 
 import numpy as np 
-import pandas as pd 
+import pandas as pd
 
 np.random.seed(101)
-
 
 # Define the generator network
 def build_generator(latent_dim, output_dim):
@@ -65,6 +64,7 @@ discriminator.compile(
     loss='binary_crossentropy',  
     metrics=[precision,recall]
 )
+
 def generator_loss_log_d(y_true, y_pred):
     return - K.mean(K.log(y_pred + K.epsilon()))
 
@@ -74,17 +74,23 @@ def build_gan(generator, discriminator):
     model = Sequential()
     model.add(generator)
     model.add(discriminator)
-    model.compile(optimizer=Adam(lr=0.0001, beta_1=0.5),
-    loss=generator_loss_log_d)
+    model.compile(
+        optimizer=Adam(lr=0.0001, beta_1=0.5),
+        loss=generator_loss_log_d
+    )
     return model
 
 # Call the upper loop function
 gan = build_gan(generator, discriminator)
 
 print(gan.summary())
+
 # Set hyperparameters
 epochs = 10000
 batch_size = 8
+
+# just a placeholder line ( assuming that a csv file exists in the directory)
+fraud_data = pd.read_csv('data/fraud_data.csv')
 
 # Training loop for the GANs
 for epoch in range(epochs):
@@ -127,5 +133,5 @@ for epoch in range(epochs):
 noise = np.random.normal(0,1,size = (int(num_synthetic_samples1),int(latent_dim)))
 
 synthetic_fraud_data = generator.predict(noise)
-fake_df_cbs = pd.DataFrame(synthetic_fraud_data,columns = features)
-fake_df_cbs.shape
+fake_df = pd.DataFrame(synthetic_fraud_data,columns = features)
+fake_df.shape

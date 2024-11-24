@@ -1,0 +1,12 @@
+prefix=/Users/thomas/Documents/GitHub/Deep-Learning/.conda
+exec_prefix=${prefix}
+libdir=/Users/thomas/Documents/GitHub/Deep-Learning/.conda/lib
+includedir=/Users/thomas/Documents/GitHub/Deep-Learning/.conda/include
+
+Name: absl_time_zone
+Description: Abseil time_zone library
+URL: https://abseil.io/
+Version: 20240116
+Requires:
+Libs: -L${libdir}  -labsl_time_zone 
+Cflags: -I${includedir} -Wno-float-conversion -Wno-implicit-float-conversion -Wno-implicit-int-float-conversion -Wno-unknown-warning-option -DNOMINMAX

@@ -1,0 +1,2597 @@
+{
+  "build": "h3a6587f_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=14.0.6",
+    "zlib >=1.2.13,<1.3.0a0",
+    "zstd >=1.5.2,<1.6.0a0",
+    "lz4-c >=1.9.4,<1.10.0a0",
+    "libprotobuf >=4.25.3,<4.25.4.0a0",
+    "libabseil * cxx17*",
+    "libabseil >=20240116.2,<20240116.3.0a0",
+    "icu >=73.1,<74.0a0",
+    "openssl >=3.0.14,<4.0a0",
+    "libcurl >=8.7.1,<9.0a0",
+    "libedit >=3.1.20230828,<3.2.0a0"
+  ],
+  "extracted_package_dir": "/opt/anaconda3/pkgs/mysql-8.4.0-h3a6587f_1",
+  "files": [
+    "LICENSE.router",
+    "README.router",
+    "bin/comp_err",
+    "bin/ibd2sdi",
+    "bin/innochecksum",
+    "bin/my_print_defaults",
+    "bin/myisam_ftdump",
+    "bin/myisamchk",
+    "bin/myisamlog",
+    "bin/myisampack",
+    "bin/mysql",
+    "bin/mysql.server",
+    "bin/mysql_client_test",
+    "bin/mysql_config",
+    "bin/mysql_config_editor",
+    "bin/mysql_keyring_encryption_test",
+    "bin/mysql_migrate_keyring",
+    "bin/mysql_secure_installation",
+    "bin/mysql_test_event_tracking",
+    "bin/mysql_tzinfo_to_sql",
+    "bin/mysqladmin",
+    "bin/mysqlbinlog",
+    "bin/mysqlcheck",
+    "bin/mysqld",
+    "bin/mysqld_multi",
+    "bin/mysqld_safe",
+    "bin/mysqldump",
+    "bin/mysqldumpslow",
+    "bin/mysqlimport",
+    "bin/mysqlrouter",
+    "bin/mysqlrouter_keyring",
+    "bin/mysqlrouter_passwd",
+    "bin/mysqlrouter_plugin_info",
+    "bin/mysqlshow",
+    "bin/mysqlslap",
+    "bin/mysqltest",
+    "bin/mysqltest_safe_process",
+    "bin/mysqlxtest",
+    "bin/perror",
+    "docs/sample_mysqlrouter.conf",
+    "include/mysql/errmsg.h",
+    "include/mysql/field_types.h",
+    "include/mysql/my_command.h",
+    "include/mysql/my_compress.h",
+    "include/mysql/my_list.h",
+    "include/mysql/mysql.h",
+    "include/mysql/mysql/client_plugin.h",
+    "include/mysql/mysql/plugin_auth_common.h",
+    "include/mysql/mysql/udf_registration_types.h",
+    "include/mysql/mysql_com.h",
+    "include/mysql/mysql_time.h",
+    "include/mysql/mysql_version.h",
+    "include/mysql/mysqld_error.h",
+    "include/mysql/mysqlx_ername.h",
+    "include/mysql/mysqlx_error.h",
+    "include/mysql/mysqlx_version.h",
+    "lib/libmysqlclient.24.dylib",
+    "lib/libmysqlclient.a",
+    "lib/libmysqlclient.dylib",
+    "lib/libmysqlharness.1.dylib",
+    "lib/libmysqlharness_stdx.1.dylib",
+    "lib/libmysqlharness_tls.1.dylib",
+    "lib/libmysqlrouter.1.dylib",
+    "lib/libmysqlrouter_connection_pool.1.dylib",
+    "lib/libmysqlrouter_destination_status.1.dylib",
+    "lib/libmysqlrouter_http.1.dylib",
+    "lib/libmysqlrouter_http_auth_backend.1.dylib",
+    "lib/libmysqlrouter_http_auth_realm.1.dylib",
+    "lib/libmysqlrouter_io_component.1.dylib",
+    "lib/libmysqlrouter_metadata_cache.1.dylib",
+    "lib/libmysqlrouter_mysqlxmessages.1.dylib",
+    "lib/libmysqlrouter_routing.1.dylib",
+    "lib/libmysqlrouter_routing_connections.1.dylib",
+    "lib/libmysqlservices.a",
+    "lib/mysqlrouter/connection_pool.so",
+    "lib/mysqlrouter/destination_status.so",
+    "lib/mysqlrouter/http_auth_backend.so",
+    "lib/mysqlrouter/http_auth_realm.so",
+    "lib/mysqlrouter/http_server.so",
+    "lib/mysqlrouter/io.so",
+    "lib/mysqlrouter/keepalive.so",
+    "lib/mysqlrouter/metadata_cache.so",
+    "lib/mysqlrouter/rest_api.so",
+    "lib/mysqlrouter/rest_connection_pool.so",
+    "lib/mysqlrouter/rest_metadata_cache.so",
+    "lib/mysqlrouter/rest_router.so",
+    "lib/mysqlrouter/rest_routing.so",
+    "lib/mysqlrouter/router_openssl.so",
+    "lib/mysqlrouter/router_protobuf.so",
+    "lib/mysqlrouter/routing.so",
+    "lib/pkgconfig/mysqlclient.pc",
+    "lib/plugin/adt_null.so",
+    "lib/plugin/auth.so",
+    "lib/plugin/auth_test_plugin.so",
+    "lib/plugin/component_audit_api_message_emit.so",
+    "lib/plugin/component_example_component1.so",
+    "lib/plugin/component_example_component2.so",
+    "lib/plugin/component_example_component3.so",
+    "lib/plugin/component_keyring_file.so",
+    "lib/plugin/component_log_filter_dragnet.so",
+    "lib/plugin/component_log_sink_json.so",
+    "lib/plugin/component_log_sink_syseventlog.so",
+    "lib/plugin/component_log_sink_test.so",
+    "lib/plugin/component_mysqlbackup.so",
+    "lib/plugin/component_mysqlx_global_reset.so",
+    "lib/plugin/component_pfs_example.so",
+    "lib/plugin/component_pfs_example_component_population.so",
+    "lib/plugin/component_query_attributes.so",
+    "lib/plugin/component_reference_cache.so",
+    "lib/plugin/component_test_audit_api_message.so",
+    "lib/plugin/component_test_backup_lock_service.so",
+    "lib/plugin/component_test_component_deinit.so",
+    "lib/plugin/component_test_event_tracking_consumer.so",
+    "lib/plugin/component_test_event_tracking_consumer_a.so",
+    "lib/plugin/component_test_event_tracking_consumer_b.so",
+    "lib/plugin/component_test_event_tracking_consumer_c.so",
+    "lib/plugin/component_test_event_tracking_producer_a.so",
+    "lib/plugin/component_test_event_tracking_producer_b.so",
+    "lib/plugin/component_test_execute_prepared_statement.so",
+    "lib/plugin/component_test_execute_regular_statement.so",
+    "lib/plugin/component_test_host_application_signal.so",
+    "lib/plugin/component_test_mysql_command_services.so",
+    "lib/plugin/component_test_mysql_current_thread_reader.so",
+    "lib/plugin/component_test_mysql_runtime_error.so",
+    "lib/plugin/component_test_mysql_signal_handler.so",
+    "lib/plugin/component_test_mysql_system_variable_set.so",
+    "lib/plugin/component_test_mysql_thd_store_service.so",
+    "lib/plugin/component_test_pfs_notification.so",
+    "lib/plugin/component_test_pfs_resource_group.so",
+    "lib/plugin/component_test_sensitive_system_variables.so",
+    "lib/plugin/component_test_server_telemetry_metrics.so",
+    "lib/plugin/component_test_server_telemetry_traces.so",
+    "lib/plugin/component_test_status_var_reader.so",
+    "lib/plugin/component_test_status_var_service.so",
+    "lib/plugin/component_test_status_var_service_int.so",
+    "lib/plugin/component_test_status_var_service_reg_only.so",
+    "lib/plugin/component_test_status_var_service_str.so",
+    "lib/plugin/component_test_status_var_service_unreg_only.so",
+    "lib/plugin/component_test_string_service.so",
+    "lib/plugin/component_test_string_service_charset.so",
+    "lib/plugin/component_test_string_service_long.so",
+    "lib/plugin/component_test_sys_var_service.so",
+    "lib/plugin/component_test_sys_var_service_int.so",
+    "lib/plugin/component_test_sys_var_service_same.so",
+    "lib/plugin/component_test_sys_var_service_str.so",
+    "lib/plugin/component_test_system_variable_source.so",
+    "lib/plugin/component_test_table_access.so",
+    "lib/plugin/component_test_udf_registration.so",
+    "lib/plugin/component_test_udf_services.so",
+    "lib/plugin/component_udf_reg_3_func.so",
+    "lib/plugin/component_udf_reg_avg_func.so",
+    "lib/plugin/component_udf_reg_int_func.so",
+    "lib/plugin/component_udf_reg_int_same_func.so",
+    "lib/plugin/component_udf_reg_only_3_func.so",
+    "lib/plugin/component_udf_reg_real_func.so",
+    "lib/plugin/component_udf_unreg_3_func.so",
+    "lib/plugin/component_udf_unreg_int_func.so",
+    "lib/plugin/component_udf_unreg_real_func.so",
+    "lib/plugin/component_validate_password.so",
+    "lib/plugin/conflicting_variables.so",
+    "lib/plugin/connection_control.so",
+    "lib/plugin/daemon_example.ini",
+    "lib/plugin/ddl_rewriter.so",
+    "lib/plugin/group_replication.so",
+    "lib/plugin/ha_example.so",
+    "lib/plugin/ha_mock.so",
+    "lib/plugin/keyring_udf.so",
+    "lib/plugin/libdaemon_example.so",
+    "lib/plugin/libtest_framework.so",
+    "lib/plugin/libtest_services.so",
+    "lib/plugin/libtest_services_threaded.so",
+    "lib/plugin/libtest_session_attach.so",
+    "lib/plugin/libtest_session_detach.so",
+    "lib/plugin/libtest_session_in_thd.so",
+    "lib/plugin/libtest_session_info.so",
+    "lib/plugin/libtest_sql_2_sessions.so",
+    "lib/plugin/libtest_sql_all_col_types.so",
+    "lib/plugin/libtest_sql_cmds_1.so",
+    "lib/plugin/libtest_sql_commit.so",
+    "lib/plugin/libtest_sql_complex.so",
+    "lib/plugin/libtest_sql_errors.so",
+    "lib/plugin/libtest_sql_lock.so",
+    "lib/plugin/libtest_sql_processlist.so",
+    "lib/plugin/libtest_sql_replication.so",
+    "lib/plugin/libtest_sql_reset_connection.so",
+    "lib/plugin/libtest_sql_shutdown.so",
+    "lib/plugin/libtest_sql_sleep_is_connected.so",
+    "lib/plugin/libtest_sql_sqlmode.so",
+    "lib/plugin/libtest_sql_stmt.so",
+    "lib/plugin/libtest_sql_stored_procedures_functions.so",
+    "lib/plugin/libtest_sql_views_triggers.so",
+    "lib/plugin/libtest_x_sessions_deinit.so",
+    "lib/plugin/libtest_x_sessions_init.so",
+    "lib/plugin/locking_service.so",
+    "lib/plugin/mypluglib.so",
+    "lib/plugin/mysql_clone.so",
+    "lib/plugin/mysql_no_login.so",
+    "lib/plugin/pfs_example_plugin_employee.so",
+    "lib/plugin/qa_auth_client.so",
+    "lib/plugin/qa_auth_interface.so",
+    "lib/plugin/qa_auth_server.so",
+    "lib/plugin/replication_observers_example_plugin.so",
+    "lib/plugin/rewrite_example.so",
+    "lib/plugin/rewriter.so",
+    "lib/plugin/semisync_master.so",
+    "lib/plugin/semisync_replica.so",
+    "lib/plugin/semisync_slave.so",
+    "lib/plugin/semisync_source.so",
+    "lib/plugin/test_security_context.so",
+    "lib/plugin/test_services_command_services.so",
+    "lib/plugin/test_services_host_application_signal.so",
+    "lib/plugin/test_services_plugin_registry.so",
+    "lib/plugin/test_udf_services.so",
+    "lib/plugin/udf_example.so",
+    "lib/plugin/validate_password.so",
+    "lib/plugin/version_token.so",
+    "mysql/LICENSE",
+    "mysql/README",
+    "mysql/support-files/mysql-log-rotate",
+    "mysql/support-files/mysql.server",
+    "mysql/support-files/mysqld_multi.server",
+    "mysqlrouter-log-rotate",
+    "share/aclocal/mysql.m4",
+    "share/doc/mysql/INFO_BIN",
+    "share/doc/mysql/INFO_SRC",
+    "share/man/man1/comp_err.1",
+    "share/man/man1/ibd2sdi.1",
+    "share/man/man1/innochecksum.1",
+    "share/man/man1/my_print_defaults.1",
+    "share/man/man1/myisam_ftdump.1",
+    "share/man/man1/myisamchk.1",
+    "share/man/man1/myisamlog.1",
+    "share/man/man1/myisampack.1",
+    "share/man/man1/mysql.1",
+    "share/man/man1/mysql.server.1",
+    "share/man/man1/mysql_config.1",
+    "share/man/man1/mysql_config_editor.1",
+    "share/man/man1/mysql_secure_installation.1",
+    "share/man/man1/mysql_tzinfo_to_sql.1",
+    "share/man/man1/mysqladmin.1",
+    "share/man/man1/mysqlbinlog.1",
+    "share/man/man1/mysqlcheck.1",
+    "share/man/man1/mysqld_multi.1",
+    "share/man/man1/mysqld_safe.1",
+    "share/man/man1/mysqldump.1",
+    "share/man/man1/mysqldumpslow.1",
+    "share/man/man1/mysqlimport.1",
+    "share/man/man1/mysqlman.1",
+    "share/man/man1/mysqlrouter.1",
+    "share/man/man1/mysqlrouter_passwd.1",
+    "share/man/man1/mysqlrouter_plugin_info.1",
+    "share/man/man1/mysqlshow.1",
+    "share/man/man1/mysqlslap.1",
+    "share/man/man1/perror.1",
+    "share/man/man8/mysqld.8",
+    "share/mysql/bulgarian/errmsg.sys",
+    "share/mysql/charsets/Index.xml",
+    "share/mysql/charsets/README",
+    "share/mysql/charsets/armscii8.xml",
+    "share/mysql/charsets/ascii.xml",
+    "share/mysql/charsets/cp1250.xml",
+    "share/mysql/charsets/cp1251.xml",
+    "share/mysql/charsets/cp1256.xml",
+    "share/mysql/charsets/cp1257.xml",
+    "share/mysql/charsets/cp850.xml",
+    "share/mysql/charsets/cp852.xml",
+    "share/mysql/charsets/cp866.xml",
+    "share/mysql/charsets/dec8.xml",
+    "share/mysql/charsets/geostd8.xml",
+    "share/mysql/charsets/greek.xml",
+    "share/mysql/charsets/hebrew.xml",
+    "share/mysql/charsets/hp8.xml",
+    "share/mysql/charsets/keybcs2.xml",
+    "share/mysql/charsets/koi8r.xml",
+    "share/mysql/charsets/koi8u.xml",
+    "share/mysql/charsets/latin1.xml",
+    "share/mysql/charsets/latin2.xml",
+    "share/mysql/charsets/latin5.xml",
+    "share/mysql/charsets/latin7.xml",
+    "share/mysql/charsets/macce.xml",
+    "share/mysql/charsets/macroman.xml",
+    "share/mysql/charsets/swe7.xml",
+    "share/mysql/czech/errmsg.sys",
+    "share/mysql/danish/errmsg.sys",
+    "share/mysql/dictionary.txt",
+    "share/mysql/dutch/errmsg.sys",
+    "share/mysql/english/errmsg.sys",
+    "share/mysql/estonian/errmsg.sys",
+    "share/mysql/french/errmsg.sys",
+    "share/mysql/german/errmsg.sys",
+    "share/mysql/greek/errmsg.sys",
+    "share/mysql/hungarian/errmsg.sys",
+    "share/mysql/install_rewriter.sql",
+    "share/mysql/italian/errmsg.sys",
+    "share/mysql/japanese/errmsg.sys",
+    "share/mysql/korean/errmsg.sys",
+    "share/mysql/messages_to_clients.txt",
+    "share/mysql/messages_to_error_log.txt",
+    "share/mysql/norwegian-ny/errmsg.sys",
+    "share/mysql/norwegian/errmsg.sys",
+    "share/mysql/polish/errmsg.sys",
+    "share/mysql/portuguese/errmsg.sys",
+    "share/mysql/romanian/errmsg.sys",
+    "share/mysql/russian/errmsg.sys",
+    "share/mysql/serbian/errmsg.sys",
+    "share/mysql/slovak/errmsg.sys",
+    "share/mysql/spanish/errmsg.sys",
+    "share/mysql/swedish/errmsg.sys",
+    "share/mysql/ukrainian/errmsg.sys",
+    "share/mysql/uninstall_rewriter.sql"
+  ],
+  "fn": "mysql-8.4.0-h3a6587f_1.conda",
+  "license": "GPL-2.0-only",
+  "link": {
+    "source": "/opt/anaconda3/pkgs/mysql-8.4.0-h3a6587f_1",
+    "type": 1
+  },
+  "md5": "50bbe93a1337d78856723a11e2c360a0",
+  "name": "mysql",
+  "package_tarball_full_path": "/opt/anaconda3/pkgs/mysql-8.4.0-h3a6587f_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "LICENSE.router",
+        "path_type": "hardlink",
+        "sha256": "e9c1a77bcd4de37bb58196303cec25ad38339c04ad94cccaec253e53d84e9d28",
+        "sha256_in_prefix": "e9c1a77bcd4de37bb58196303cec25ad38339c04ad94cccaec253e53d84e9d28",
+        "size_in_bytes": 115945
+      },
+      {
+        "_path": "README.router",
+        "path_type": "hardlink",
+        "sha256": "e3f4adf303e576b7115d2fb3dcd8b96c2d9aa5238b0207ae9480e365af6c151b",
+        "sha256_in_prefix": "e3f4adf303e576b7115d2fb3dcd8b96c2d9aa5238b0207ae9480e365af6c151b",
+        "size_in_bytes": 679
+      },
+      {
+        "_path": "bin/comp_err",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "cdf318f775b1fc384d0ca197c26cb891cbaa614ae57b627602665e67b9316f6b",
+        "sha256_in_prefix": "9dac6354e06d4ef7e0f362265e5f77c7c0d7ff69bf9af783447695dc334b6cb4",
+        "size_in_bytes": 6781856
+      },
+      {
+        "_path": "bin/ibd2sdi",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "d7714df9faeda1e5c2724a03c29a71e51f7a36b577503b9b7d1dc705732f69d4",
+        "sha256_in_prefix": "3b54f4e522758705315deae69bafaccd90d8c589ffd03529b25a3a895a63f474",
+        "size_in_bytes": 6884080
+      },
+      {
+        "_path": "bin/innochecksum",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "cd967cbcce121e9287b0f9f44acf9d3d80fcce0700f4c36ee8eff9630f969bdc",
+        "sha256_in_prefix": "8c7b2f0eb9341c97c710448fa82187918be6dba938ec6adf6fbd8136e2787d06",
+        "size_in_bytes": 6785840
+      },
+      {
+        "_path": "bin/my_print_defaults",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "dc50307628c3f0df29bea1e2ad7179a44e32116dc5a60afa6d6b70a4e73c2ca3",
+        "sha256_in_prefix": "3dcae16dca1125e0a20767056693906ef21ecdaa9b0ad19952d1fd497c00d4c8",
+        "size_in_bytes": 6742896
+      },
+      {
+        "_path": "bin/myisam_ftdump",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "4cab0fc3a370ec098dcfcf66de581d95975961aa3e7bc00e7242e1351b5a9956",
+        "sha256_in_prefix": "6e979e46f65d31d8fad325b4a721069ed529f49c7625ac29d8a41f69b4d309b6",
+        "size_in_bytes": 7017936
+      },
+      {
+        "_path": "bin/myisamchk",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "89f2d81bc7485aec246973aa801759656b9548354e04b32b6fc89a356eae171e",
+        "sha256_in_prefix": "6a90959530b2d2edfa884165c8fa50d84fb68cf0a96da1a3fff1d999d5c8e7ac",
+        "size_in_bytes": 7159312
+      },
+      {
+        "_path": "bin/myisamlog",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "66eee9fd97ad57f8adb6e17a4c31edbb6f3a4877b23f7685b77a320349194885",
+        "sha256_in_prefix": "a03992ace2fdd52f7eaec1c7cef5dc33a03a58cc93dbffa148014988ae8ef067",
+        "size_in_bytes": 6968176
+      },
+      {
+        "_path": "bin/myisampack",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "6a53fd4730ac1cf3e89b2466be0b14de8a4a7e138ba2f431504ee42581661bf8",
+        "sha256_in_prefix": "899c0cb72fe78de2135dbc3e8702441defbe03d46f73b0a886f6d3331560fa2c",
+        "size_in_bytes": 7053008
+      },
+      {
+        "_path": "bin/mysql",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "409f4b1538ad0d29596111bff2a946efd0653e5714a10fffcac731173a684fa3",
+        "sha256_in_prefix": "043c8631a94bcfa5d317ad5ae9dd447e8bd9c02f2826172bd6911ee67ca7a57e",
+        "size_in_bytes": 7182352
+      },
+      {
+        "_path": "bin/mysql.server",
+        "path_type": "softlink",
+        "sha256": "ac49dacf8fee0dbfd04a983559e6eefeb268f9fb82286907720fa09443d56d3a",
+        "size_in_bytes": 12019
+      },
+      {
+        "_path": "bin/mysql_client_test",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "d801b56e1e668c555c5577611102dcbde33636a2ae547abeb0c64f64c99a1a0c",
+        "sha256_in_prefix": "e01d46e2f460ad5ad4b85ca48ef4dec560f7daadd7cf1fd3241af98895c49f1d",
+        "size_in_bytes": 7528640
+      },
+      {
+        "_path": "bin/mysql_config",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "ab25addc92cd0c4e5ca680250408c3edb16ce527231cd83a71a2a24e20e7a0f3",
+        "sha256_in_prefix": "f2acfb6b51fe011d7b7424d7e7850a7d8084c5bb63b443e9ec927cb77b3667bd",
+        "size_in_bytes": 6491
+      },
+      {
+        "_path": "bin/mysql_config_editor",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "81cce1a7a4814a2bf539e954ad44904bfd54db43fb0f6d679887201562405490",
+        "sha256_in_prefix": "db7dc9cd23d37d3d7f0e728437ad2ebef6583b3dd80db7b77efac359cd2c5039",
+        "size_in_bytes": 6762496
+      },
+      {
+        "_path": "bin/mysql_keyring_encryption_test",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "cb839c7237b42929d67391c0c6fce27aa91eca62f5e9afa757203cfc5b4ea35b",
+        "sha256_in_prefix": "21be394d2d5f82ac49326975bd527bd9534d63ef510b5dc95f3703c2c1188436",
+        "size_in_bytes": 6855376
+      },
+      {
+        "_path": "bin/mysql_migrate_keyring",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "c8a6e47a4ebd06345d2d233025faf9c58bc2aeb947d21dced3b3b43a562eb771",
+        "sha256_in_prefix": "610d19f4faef1b23a4af636b89132fa727a9e3158a84b1e6d6d9d7fc26496a06",
+        "size_in_bytes": 7164560
+      },
+      {
+        "_path": "bin/mysql_secure_installation",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "72607ad88b016296fee0690495680ceacfee52235a5f37a7d690a7536bf8fdb3",
+        "sha256_in_prefix": "cc54a8599d6f7d72bed0686695dda11ea997061a16171d0784a053f1daba5d1e",
+        "size_in_bytes": 7011936
+      },
+      {
+        "_path": "bin/mysql_test_event_tracking",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "28014fa3c419fa99c89314158b46b70bec48da2ffc45fe398372f5d55cab566f",
+        "sha256_in_prefix": "726a3d782a05d87d44fd0bcc9d52b0276bc144adfaedd084ab60aca4feda721b",
+        "size_in_bytes": 6851216
+      },
+      {
+        "_path": "bin/mysql_tzinfo_to_sql",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "998a423324850fce719dad2740ccfb37fcbfd0f895a9e85a76894c886eef34fe",
+        "sha256_in_prefix": "0dfb902dd2a495ded476884db649bd58d038f07bf8d3198c18d51ea4c946e69a",
+        "size_in_bytes": 6658240
+      },
+      {
+        "_path": "bin/mysqladmin",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "a3c6288cedb79d138b21e61d829892a564ec29ad6be161756bb9b2981642267a",
+        "sha256_in_prefix": "9d39006f7484f40a31a35061944bf51eb94cd92a9aab001e0c99845edcbc2244",
+        "size_in_bytes": 7047568
+      },
+      {
+        "_path": "bin/mysqlbinlog",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "a6dffcecb0f92997a569e8a7c1eef10a87e0f31dfb8c3b79e3409b1163b2fc2d",
+        "sha256_in_prefix": "c43e3d8fb002e252be5305bcba869e71b0ba735680d608f7561325f73390468d",
+        "size_in_bytes": 7860896
+      },
+      {
+        "_path": "bin/mysqlcheck",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "3af8a6b875b3dd1ddb6ce809110e1acbadffec6c8477543ac5a1b0b62de15b70",
+        "sha256_in_prefix": "f249c020c229742adb28e4ddb5fe15fd96a12af819abe11c15d0e365607e65cc",
+        "size_in_bytes": 7032608
+      },
+      {
+        "_path": "bin/mysqld",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "5066705f4c835a42979c742d46e24f8be00f48e098a313deacf7bc5e715041d0",
+        "sha256_in_prefix": "2dac0d9224221c509172f891c52ab7a76e77e89695b1c2cfdbe9e73957410304",
+        "size_in_bytes": 60860256
+      },
+      {
+        "_path": "bin/mysqld_multi",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "23d6797e5ed37bbe05417f02f3556f575dc04b9566fab123057e6b660cadb0ea",
+        "sha256_in_prefix": "17f3a6ffd7b2c3f01d90c57b3eae92174fa2d635b9d5f7f41063bdb502ff0a8c",
+        "size_in_bytes": 32848
+      },
+      {
+        "_path": "bin/mysqld_safe",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "c81f56a87ef48b7f179743fe1668d34f1bb37c7bc589d1a2f95e4e0debe0778f",
+        "sha256_in_prefix": "e44d7c89b97dbc3fcb2eb4df85b2c806bced6063cde6f5fe63b12aef30051875",
+        "size_in_bytes": 30624
+      },
+      {
+        "_path": "bin/mysqldump",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "efa3af9881636777c4e6a3bd4dc2b3597c728dd2c57a712ce68a98dccc2283d2",
+        "sha256_in_prefix": "342aee49e80f669bc699e59dfafdc6fbb989d7370db4ca996101df9ad68758dd",
+        "size_in_bytes": 7157968
+      },
+      {
+        "_path": "bin/mysqldumpslow",
+        "path_type": "hardlink",
+        "sha256": "bcaf94619449b8a976757524a876143efcc0e1509228469623ef085671b247e4",
+        "sha256_in_prefix": "bcaf94619449b8a976757524a876143efcc0e1509228469623ef085671b247e4",
+        "size_in_bytes": 7719
+      },
+      {
+        "_path": "bin/mysqlimport",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "7cc9da69dec48b1e66520a0c6bc02bc53bd45c2a8227b9eb37fb91d7c9224c9d",
+        "sha256_in_prefix": "c4ff85a128936a11067dcb469342582ab5d7df423ba13b24b4d1559c49946570",
+        "size_in_bytes": 7033024
+      },
+      {
+        "_path": "bin/mysqlrouter",
+        "path_type": "hardlink",
+        "sha256": "b256e8e20305a93d258cbb2c9c17ea40a41051e8f8dfc5485d0de24948550a0d",
+        "sha256_in_prefix": "b256e8e20305a93d258cbb2c9c17ea40a41051e8f8dfc5485d0de24948550a0d",
+        "size_in_bytes": 1065312
+      },
+      {
+        "_path": "bin/mysqlrouter_keyring",
+        "path_type": "hardlink",
+        "sha256": "80e58b942a051df72e9216b2ba6eb4bc8e02a2cc887958828ff8ccc023d89128",
+        "sha256_in_prefix": "80e58b942a051df72e9216b2ba6eb4bc8e02a2cc887958828ff8ccc023d89128",
+        "size_in_bytes": 204416
+      },
+      {
+        "_path": "bin/mysqlrouter_passwd",
+        "path_type": "hardlink",
+        "sha256": "5acf2d93a1b9551222492f7294f273016ca53171db4217f48bb5784b506da17d",
+        "sha256_in_prefix": "5acf2d93a1b9551222492f7294f273016ca53171db4217f48bb5784b506da17d",
+        "size_in_bytes": 162800
+      },
+      {
+        "_path": "bin/mysqlrouter_plugin_info",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "cf2d216ec6630bffb44551645960bef8887ffdd6d2906e8ab2618e6384112500",
+        "sha256_in_prefix": "81c4af4350dd1f915bfbd8541d6d810acc6953d019001b08c46e692c9e7c94fb",
+        "size_in_bytes": 6696576
+      },
+      {
+        "_path": "bin/mysqlshow",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "b26ad837d5586de28094e8fb926bc88c5536940521f6c63bb1931539b135c651",
+        "sha256_in_prefix": "d1ccc099798a8ed18f9e1dd35207090c5d20b5022b29bda0dfc8701fba0f55d8",
+        "size_in_bytes": 7030448
+      },
+      {
+        "_path": "bin/mysqlslap",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "59f671bfe61b19a2d6874e6d4311dc7947eaae646003dfd472e1618a96196843",
+        "sha256_in_prefix": "f4907a965a757778ae5f76ad8f2118c3b0acd43df9163d457a4bc23e7efe6f98",
+        "size_in_bytes": 7052048
+      },
+      {
+        "_path": "bin/mysqltest",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "bf6b0f4c51a10838feeeabc539577541de9a98a52ff3f2c8ff363090ff1e37dd",
+        "sha256_in_prefix": "ae5d0cbd5cb7dd3d4dbcc90846e3b4dd36de276c27017232c423f217f3456b5b",
+        "size_in_bytes": 8175696
+      },
+      {
+        "_path": "bin/mysqltest_safe_process",
+        "path_type": "hardlink",
+        "sha256": "37f9821918e8b145cd85270cb794d0c65c68e6ab77e825caffabb330ec1d50cc",
+        "sha256_in_prefix": "37f9821918e8b145cd85270cb794d0c65c68e6ab77e825caffabb330ec1d50cc",
+        "size_in_bytes": 69216
+      },
+      {
+        "_path": "bin/mysqlxtest",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "9b706cf9b96d2f42e471f816dbeb79be145b0cf2f44398e01f78dfd461298d68",
+        "sha256_in_prefix": "0e22008574041b84b003dd4c8407e706c19d7cd5bd7c074cd2cea089c9108c37",
+        "size_in_bytes": 8958320
+      },
+      {
+        "_path": "bin/perror",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "4e9f87d117b7053495f620d6c1106e9d5854095670241e67839e7c2fd5948cd8",
+        "sha256_in_prefix": "35e4945dc4b752ba72f03ed48791d043ac551a84f807215a753345f744c44236",
+        "size_in_bytes": 7630736
+      },
+      {
+        "_path": "docs/sample_mysqlrouter.conf",
+        "path_type": "hardlink",
+        "sha256": "9f4e2bbbe7d7fff27424fb02d015911b35dc6bcc77fdc71525f232b3ab017241",
+        "sha256_in_prefix": "9f4e2bbbe7d7fff27424fb02d015911b35dc6bcc77fdc71525f232b3ab017241",
+        "size_in_bytes": 2245
+      },
+      {
+        "_path": "include/mysql/errmsg.h",
+        "path_type": "hardlink",
+        "sha256": "257679af44970fd4e38e904f990a0e579d08d6b6635005b59a51ff5ce76443c5",
+        "sha256_in_prefix": "257679af44970fd4e38e904f990a0e579d08d6b6635005b59a51ff5ce76443c5",
+        "size_in_bytes": 5818
+      },
+      {
+        "_path": "include/mysql/field_types.h",
+        "path_type": "hardlink",
+        "sha256": "756623711fedae2a73f8d0db35b3956e5a14a93e36cd3a816d55bf0779b0efaf",
+        "sha256_in_prefix": "756623711fedae2a73f8d0db35b3956e5a14a93e36cd3a816d55bf0779b0efaf",
+        "size_in_bytes": 3175
+      },
+      {
+        "_path": "include/mysql/my_command.h",
+        "path_type": "hardlink",
+        "sha256": "5ca2bc4f6b7d69594a02acf7b36e824f66c2095170d340e72aa6c43f03bd70a4",
+        "sha256_in_prefix": "5ca2bc4f6b7d69594a02acf7b36e824f66c2095170d340e72aa6c43f03bd70a4",
+        "size_in_bytes": 4419
+      },
+      {
+        "_path": "include/mysql/my_compress.h",
+        "path_type": "hardlink",
+        "sha256": "10120adbb1f78cb284f2aeeba0282f910a43cf5aa1d6361eaf13297f22970566",
+        "sha256_in_prefix": "10120adbb1f78cb284f2aeeba0282f910a43cf5aa1d6361eaf13297f22970566",
+        "size_in_bytes": 3697
+      },
+      {
+        "_path": "include/mysql/my_list.h",
+        "path_type": "hardlink",
+        "sha256": "46e0b6f8d3005e96cb5fe8ef3e6161b0c584323e49742ab9851a34f47e541bc5",
+        "sha256_in_prefix": "46e0b6f8d3005e96cb5fe8ef3e6161b0c584323e49742ab9851a34f47e541bc5",
+        "size_in_bytes": 2120
+      },
+      {
+        "_path": "include/mysql/mysql.h",
+        "path_type": "hardlink",
+        "sha256": "4245067f59b0a7e1dd2e478a60adc1b6d1649ecce75c329ff687b298e9df888c",
+        "sha256_in_prefix": "4245067f59b0a7e1dd2e478a60adc1b6d1649ecce75c329ff687b298e9df888c",
+        "size_in_bytes": 34136
+      },
+      {
+        "_path": "include/mysql/mysql/client_plugin.h",
+        "path_type": "hardlink",
+        "sha256": "9c8630d447fb4ae0ee56ac736e843ad9092093cada99b5ff436c967357435886",
+        "sha256_in_prefix": "9c8630d447fb4ae0ee56ac736e843ad9092093cada99b5ff436c967357435886",
+        "size_in_bytes": 8508
+      },
+      {
+        "_path": "include/mysql/mysql/plugin_auth_common.h",
+        "path_type": "hardlink",
+        "sha256": "4f8bf448ec3f083fe50766920b741f753e0d31d39f7dbaa1a84468c56fb71ba1",
+        "sha256_in_prefix": "4f8bf448ec3f083fe50766920b741f753e0d31d39f7dbaa1a84468c56fb71ba1",
+        "size_in_bytes": 6917
+      },
+      {
+        "_path": "include/mysql/mysql/udf_registration_types.h",
+        "path_type": "hardlink",
+        "sha256": "f3efc3a9eaecdfe618d3dd902c1f7e6a226dd44cbd397ccfab03ca0c52de4515",
+        "sha256_in_prefix": "f3efc3a9eaecdfe618d3dd902c1f7e6a226dd44cbd397ccfab03ca0c52de4515",
+        "size_in_bytes": 3875
+      },
+      {
+        "_path": "include/mysql/mysql_com.h",
+        "path_type": "hardlink",
+        "sha256": "7d157a689633b9bc0bce24a5c556c7061c1266fb26e8483d827fd4b44b53998b",
+        "sha256_in_prefix": "7d157a689633b9bc0bce24a5c556c7061c1266fb26e8483d827fd4b44b53998b",
+        "size_in_bytes": 42018
+      },
+      {
+        "_path": "include/mysql/mysql_time.h",
+        "path_type": "hardlink",
+        "sha256": "b3748ec3656005d9ddf929e2ec83fd3a4e2ce98666ef9e73b0c12bf82a36541c",
+        "sha256_in_prefix": "b3748ec3656005d9ddf929e2ec83fd3a4e2ce98666ef9e73b0c12bf82a36541c",
+        "size_in_bytes": 3603
+      },
+      {
+        "_path": "include/mysql/mysql_version.h",
+        "path_type": "hardlink",
+        "sha256": "5fc4c2a265e827552e614d79668fc91beff5ffd92f189a6a5465d84e57b74ca7",
+        "sha256_in_prefix": "5fc4c2a265e827552e614d79668fc91beff5ffd92f189a6a5465d84e57b74ca7",
+        "size_in_bytes": 1096
+      },
+      {
+        "_path": "include/mysql/mysqld_error.h",
+        "path_type": "hardlink",
+        "sha256": "d3af5033c19c3f52f0f0c1baee0597b820f8b4b12875e33ed24fce5800306c17",
+        "sha256_in_prefix": "d3af5033c19c3f52f0f0c1baee0597b820f8b4b12875e33ed24fce5800306c17",
+        "size_in_bytes": 276647
+      },
+      {
+        "_path": "include/mysql/mysqlx_ername.h",
+        "path_type": "hardlink",
+        "sha256": "6a4acfc654a62ed7b60efd0e9b220c307fad21abc72247115e807a729030844c",
+        "sha256_in_prefix": "6a4acfc654a62ed7b60efd0e9b220c307fad21abc72247115e807a729030844c",
+        "size_in_bytes": 7674
+      },
+      {
+        "_path": "include/mysql/mysqlx_error.h",
+        "path_type": "hardlink",
+        "sha256": "28a04627b2bc681897f600e108dd062781e3ed241399145d53eaf3981e993437",
+        "sha256_in_prefix": "28a04627b2bc681897f600e108dd062781e3ed241399145d53eaf3981e993437",
+        "size_in_bytes": 4161
+      },
+      {
+        "_path": "include/mysql/mysqlx_version.h",
+        "path_type": "hardlink",
+        "sha256": "42016f3113277b88f64b83c2bd79238d4b3aed5b160eca884a3b0ed1592439d5",
+        "sha256_in_prefix": "42016f3113277b88f64b83c2bd79238d4b3aed5b160eca884a3b0ed1592439d5",
+        "size_in_bytes": 1845
+      },
+      {
+        "_path": "lib/libmysqlclient.24.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "d30f0f3fa5e5d00a2259080d7275867a6b80361efea6d3268ad4f78c299def43",
+        "sha256_in_prefix": "bfcd6a0fd98d800db91dcaa3ba6a3f5bb842bead7161a56c1d47f06f58a3abc7",
+        "size_in_bytes": 6993232
+      },
+      {
+        "_path": "lib/libmysqlclient.a",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "aacf498b61a1d9c3d46771a72b3d7330c962d864a382b712230ee6f9293b4c12",
+        "sha256_in_prefix": "38387033250dcde5ee433b0a9dc8852a7bd7699bb1d3c92b183d0b93b743c5dc",
+        "size_in_bytes": 7637104
+      },
+      {
+        "_path": "lib/libmysqlclient.dylib",
+        "path_type": "softlink",
+        "sha256": "d30f0f3fa5e5d00a2259080d7275867a6b80361efea6d3268ad4f78c299def43",
+        "size_in_bytes": 6993232
+      },
+      {
+        "_path": "lib/libmysqlharness.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "24e9d4e16c1553291291a3e4ab1deedae54f042e59030beb739550337480387a",
+        "sha256_in_prefix": "24e9d4e16c1553291291a3e4ab1deedae54f042e59030beb739550337480387a",
+        "size_in_bytes": 933056
+      },
+      {
+        "_path": "lib/libmysqlharness_stdx.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "1bf69b3411a0a177e6e6d491a1cadc0820a5a3de6a3a7cb124cbf4c370134b35",
+        "sha256_in_prefix": "1bf69b3411a0a177e6e6d491a1cadc0820a5a3de6a3a7cb124cbf4c370134b35",
+        "size_in_bytes": 72864
+      },
+      {
+        "_path": "lib/libmysqlharness_tls.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "b3b5db90dece7315e8bf34698cb878de4a0e206ef0c5e9c86d38d498a0f32f64",
+        "sha256_in_prefix": "b3b5db90dece7315e8bf34698cb878de4a0e206ef0c5e9c86d38d498a0f32f64",
+        "size_in_bytes": 103168
+      },
+      {
+        "_path": "lib/libmysqlrouter.1.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "d036b657ef87f96972a6ae84724dc12045f1a130c91ad3976f5fd81d0cebcbf6",
+        "sha256_in_prefix": "b52b9f4a3b5cf811441ef5d9401e135313589915c1cd7903c646fb39c13263c2",
+        "size_in_bytes": 7427776
+      },
+      {
+        "_path": "lib/libmysqlrouter_connection_pool.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "8d63edf07d8932c8e750dc5c7ec80b4d294c25c75cd6f72a0505915c63c5fa01",
+        "sha256_in_prefix": "8d63edf07d8932c8e750dc5c7ec80b4d294c25c75cd6f72a0505915c63c5fa01",
+        "size_in_bytes": 145920
+      },
+      {
+        "_path": "lib/libmysqlrouter_destination_status.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "3b2af13fa1d9e7620d79cbb02fed4238d4bc73998b37be2f1600d24667b1cb16",
+        "sha256_in_prefix": "3b2af13fa1d9e7620d79cbb02fed4238d4bc73998b37be2f1600d24667b1cb16",
+        "size_in_bytes": 151632
+      },
+      {
+        "_path": "lib/libmysqlrouter_http.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "b3bac46130e97185e923f620e8fb23d954c93a1700e9bfe2bb125996e748d28a",
+        "sha256_in_prefix": "b3bac46130e97185e923f620e8fb23d954c93a1700e9bfe2bb125996e748d28a",
+        "size_in_bytes": 134192
+      },
+      {
+        "_path": "lib/libmysqlrouter_http_auth_backend.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "d9808e8e7af0b00082d5555ff21c69f44f5fd118c01e676adf76d232f45ed2ac",
+        "sha256_in_prefix": "d9808e8e7af0b00082d5555ff21c69f44f5fd118c01e676adf76d232f45ed2ac",
+        "size_in_bytes": 131408
+      },
+      {
+        "_path": "lib/libmysqlrouter_http_auth_realm.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "337bae3043d3a73c532393a5921334cebe5e23be764d1abbd24b8932ff8f130b",
+        "sha256_in_prefix": "337bae3043d3a73c532393a5921334cebe5e23be764d1abbd24b8932ff8f130b",
+        "size_in_bytes": 71856
+      },
+      {
+        "_path": "lib/libmysqlrouter_io_component.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "ceea9218f951107a58d44a73200cc74cb8b6b95589b2eaea7f943134489969a5",
+        "sha256_in_prefix": "ceea9218f951107a58d44a73200cc74cb8b6b95589b2eaea7f943134489969a5",
+        "size_in_bytes": 103520
+      },
+      {
+        "_path": "lib/libmysqlrouter_metadata_cache.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "1b7fb2f6b129031186ed163c9a2d280389de708dbbe1214dd26dbb6789390606",
+        "sha256_in_prefix": "1b7fb2f6b129031186ed163c9a2d280389de708dbbe1214dd26dbb6789390606",
+        "size_in_bytes": 849488
+      },
+      {
+        "_path": "lib/libmysqlrouter_mysqlxmessages.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "a6fb4d6819c9cead87cdf7bf1877bd757f78ecdb5b5057cd1759700286c99b5d",
+        "sha256_in_prefix": "a6fb4d6819c9cead87cdf7bf1877bd757f78ecdb5b5057cd1759700286c99b5d",
+        "size_in_bytes": 270992
+      },
+      {
+        "_path": "lib/libmysqlrouter_routing.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "f414c6eda57a7181f95757a62f8b072666da19d70976788e108e210d44b49e2a",
+        "sha256_in_prefix": "f414c6eda57a7181f95757a62f8b072666da19d70976788e108e210d44b49e2a",
+        "size_in_bytes": 1848128
+      },
+      {
+        "_path": "lib/libmysqlrouter_routing_connections.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "1af2ab4ea7c43719b6185b82a80c7222955fb0e7dc11109d62631464d0aec3c4",
+        "sha256_in_prefix": "1af2ab4ea7c43719b6185b82a80c7222955fb0e7dc11109d62631464d0aec3c4",
+        "size_in_bytes": 71616
+      },
+      {
+        "_path": "lib/libmysqlservices.a",
+        "path_type": "hardlink",
+        "sha256": "a448def455c839766152f9505565543430065dab0c2092956fa15c5cb513fd51",
+        "sha256_in_prefix": "a448def455c839766152f9505565543430065dab0c2092956fa15c5cb513fd51",
+        "size_in_bytes": 10528
+      },
+      {
+        "_path": "lib/mysqlrouter/connection_pool.so",
+        "path_type": "hardlink",
+        "sha256": "ba84381150cd4420b1ca2bb6b2782e9a1752e24e84823c5b6b4de9bb1e149311",
+        "sha256_in_prefix": "ba84381150cd4420b1ca2bb6b2782e9a1752e24e84823c5b6b4de9bb1e149311",
+        "size_in_bytes": 104448
+      },
+      {
+        "_path": "lib/mysqlrouter/destination_status.so",
+        "path_type": "hardlink",
+        "sha256": "6171aba84230ff32026910394bbde14bc6572cfc6c9d0fb99a5e2ffe6fafedd3",
+        "sha256_in_prefix": "6171aba84230ff32026910394bbde14bc6572cfc6c9d0fb99a5e2ffe6fafedd3",
+        "size_in_bytes": 78608
+      },
+      {
+        "_path": "lib/mysqlrouter/http_auth_backend.so",
+        "path_type": "hardlink",
+        "sha256": "796162487335e7051de95b521455ac74edb072bcc1f6edf3e1ce1cebae0ef442",
+        "sha256_in_prefix": "796162487335e7051de95b521455ac74edb072bcc1f6edf3e1ce1cebae0ef442",
+        "size_in_bytes": 85440
+      },
+      {
+        "_path": "lib/mysqlrouter/http_auth_realm.so",
+        "path_type": "hardlink",
+        "sha256": "c03bc6dc77013e50623b17f78dc220b7c666236941fb495cac5d352f888acbc4",
+        "sha256_in_prefix": "c03bc6dc77013e50623b17f78dc220b7c666236941fb495cac5d352f888acbc4",
+        "size_in_bytes": 99456
+      },
+      {
+        "_path": "lib/mysqlrouter/http_server.so",
+        "path_type": "hardlink",
+        "sha256": "864ad44bde19816f637236ea4145429ad511a4679cf977a5e0ba29ef2a86876d",
+        "sha256_in_prefix": "864ad44bde19816f637236ea4145429ad511a4679cf977a5e0ba29ef2a86876d",
+        "size_in_bytes": 712304
+      },
+      {
+        "_path": "lib/mysqlrouter/io.so",
+        "path_type": "hardlink",
+        "sha256": "2999ae6c4a97a7d2fb0bf1daf026431a3e7b8e97390534d4e46e5a4f8bff8e55",
+        "sha256_in_prefix": "2999ae6c4a97a7d2fb0bf1daf026431a3e7b8e97390534d4e46e5a4f8bff8e55",
+        "size_in_bytes": 81104
+      },
+      {
+        "_path": "lib/mysqlrouter/keepalive.so",
+        "path_type": "hardlink",
+        "sha256": "89d9bacabf1b786fbfd7541075214493fb741c2c5b6068cfcf2e3005e1c0ad08",
+        "sha256_in_prefix": "89d9bacabf1b786fbfd7541075214493fb741c2c5b6068cfcf2e3005e1c0ad08",
+        "size_in_bytes": 69168
+      },
+      {
+        "_path": "lib/mysqlrouter/metadata_cache.so",
+        "path_type": "hardlink",
+        "sha256": "42edfbd48af258dacc8171479dec5d975aeffa4e32e9776bad0b7e00ec306d8c",
+        "sha256_in_prefix": "42edfbd48af258dacc8171479dec5d975aeffa4e32e9776bad0b7e00ec306d8c",
+        "size_in_bytes": 136544
+      },
+      {
+        "_path": "lib/mysqlrouter/rest_api.so",
+        "path_type": "hardlink",
+        "sha256": "780d02f6df55993baec4eba2f6a08ff488fbfbb4fa44353f189a359916628623",
+        "sha256_in_prefix": "780d02f6df55993baec4eba2f6a08ff488fbfbb4fa44353f189a359916628623",
+        "size_in_bytes": 224864
+      },
+      {
+        "_path": "lib/mysqlrouter/rest_connection_pool.so",
+        "path_type": "hardlink",
+        "sha256": "5acd1e5bfae3a600327a9986a38521c727d665f60d1952f7520852a81b76d755",
+        "sha256_in_prefix": "5acd1e5bfae3a600327a9986a38521c727d665f60d1952f7520852a81b76d755",
+        "size_in_bytes": 121856
+      },
+      {
+        "_path": "lib/mysqlrouter/rest_metadata_cache.so",
+        "path_type": "hardlink",
+        "sha256": "0e11b6ae21abd83faa138a5f9e2fb8c98a164c9dba8fa8f49ddca3d32aae68d1",
+        "sha256_in_prefix": "0e11b6ae21abd83faa138a5f9e2fb8c98a164c9dba8fa8f49ddca3d32aae68d1",
+        "size_in_bytes": 142096
+      },
+      {
+        "_path": "lib/mysqlrouter/rest_router.so",
+        "path_type": "hardlink",
+        "sha256": "4cf33e7ad77e90182038cbba506eb1d3441c76b12464de0d10e197d2cd108cb9",
+        "sha256_in_prefix": "4cf33e7ad77e90182038cbba506eb1d3441c76b12464de0d10e197d2cd108cb9",
+        "size_in_bytes": 144416
+      },
+      {
+        "_path": "lib/mysqlrouter/rest_routing.so",
+        "path_type": "hardlink",
+        "sha256": "1b80807be36fcf6c2ffe5ef38bdf1f9f28c7743e00e2fa212ac8716762d0ef60",
+        "sha256_in_prefix": "1b80807be36fcf6c2ffe5ef38bdf1f9f28c7743e00e2fa212ac8716762d0ef60",
+        "size_in_bytes": 180288
+      },
+      {
+        "_path": "lib/mysqlrouter/router_openssl.so",
+        "path_type": "hardlink",
+        "sha256": "8c5a44b4f69e31818ca604ad7ee6f76a3a97726838c97cbd92bba3b860c17ef7",
+        "sha256_in_prefix": "8c5a44b4f69e31818ca604ad7ee6f76a3a97726838c97cbd92bba3b860c17ef7",
+        "size_in_bytes": 68016
+      },
+      {
+        "_path": "lib/mysqlrouter/router_protobuf.so",
+        "path_type": "hardlink",
+        "sha256": "422139326bbe0e03e6b6751fa8069b5362678f73e958c175309a336dc5742d30",
+        "sha256_in_prefix": "422139326bbe0e03e6b6751fa8069b5362678f73e958c175309a336dc5742d30",
+        "size_in_bytes": 67344
+      },
+      {
+        "_path": "lib/mysqlrouter/routing.so",
+        "path_type": "hardlink",
+        "sha256": "2f34bc6eaf73794ab7d32bca7782f739c0e54d8805c6578c8a1f259d38f9ba87",
+        "sha256_in_prefix": "2f34bc6eaf73794ab7d32bca7782f739c0e54d8805c6578c8a1f259d38f9ba87",
+        "size_in_bytes": 172544
+      },
+      {
+        "_path": "lib/pkgconfig/mysqlclient.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "19ac6efedc4b02cd7f74509c4e96aaa5e920e93d48a18e8066a1bec26890aae7",
+        "sha256_in_prefix": "ca5f38d8dec516fadc34f1f1f6c45937b7650928cafe8ddf51bdfdfd294d25b5",
+        "size_in_bytes": 1694
+      },
+      {
+        "_path": "lib/plugin/adt_null.so",
+        "path_type": "hardlink",
+        "sha256": "2e05206a456895dc7de719d19ff7fbd793ddf385d892204b996df0e1cf8690ec",
+        "sha256_in_prefix": "2e05206a456895dc7de719d19ff7fbd793ddf385d892204b996df0e1cf8690ec",
+        "size_in_bytes": 69616
+      },
+      {
+        "_path": "lib/plugin/auth.so",
+        "path_type": "hardlink",
+        "sha256": "4a448411735958dd16b69ad8288cbd5360e027a137565e7293961e7ea6fcc03b",
+        "sha256_in_prefix": "4a448411735958dd16b69ad8288cbd5360e027a137565e7293961e7ea6fcc03b",
+        "size_in_bytes": 68560
+      },
+      {
+        "_path": "lib/plugin/auth_test_plugin.so",
+        "path_type": "hardlink",
+        "sha256": "252b8040069c2782ef0f33fe7ae9a6179f540e5aa544a8f4a8f2b0f672c7df76",
+        "sha256_in_prefix": "252b8040069c2782ef0f33fe7ae9a6179f540e5aa544a8f4a8f2b0f672c7df76",
+        "size_in_bytes": 68928
+      },
+      {
+        "_path": "lib/plugin/component_audit_api_message_emit.so",
+        "path_type": "hardlink",
+        "sha256": "11443db9aba55616573a6f6a1479dc9dceea2c76f8f5e6fc7b3395a53cb91613",
+        "sha256_in_prefix": "11443db9aba55616573a6f6a1479dc9dceea2c76f8f5e6fc7b3395a53cb91613",
+        "size_in_bytes": 71664
+      },
+      {
+        "_path": "lib/plugin/component_example_component1.so",
+        "path_type": "hardlink",
+        "sha256": "18a42a3e687172f3f5de86ac606b0f7dddbe1dbd05cb35c0b44bd5df93e1700a",
+        "sha256_in_prefix": "18a42a3e687172f3f5de86ac606b0f7dddbe1dbd05cb35c0b44bd5df93e1700a",
+        "size_in_bytes": 67840
+      },
+      {
+        "_path": "lib/plugin/component_example_component2.so",
+        "path_type": "hardlink",
+        "sha256": "c3aa78b0dd3333c5c6e08afca092e16abad380578af8b4a15536b136c05eda1c",
+        "sha256_in_prefix": "c3aa78b0dd3333c5c6e08afca092e16abad380578af8b4a15536b136c05eda1c",
+        "size_in_bytes": 67632
+      },
+      {
+        "_path": "lib/plugin/component_example_component3.so",
+        "path_type": "hardlink",
+        "sha256": "d486cbf86b8c787ba399d3347d8e6016b0f0994076d61f2c6c103e18f634a643",
+        "sha256_in_prefix": "d486cbf86b8c787ba399d3347d8e6016b0f0994076d61f2c6c103e18f634a643",
+        "size_in_bytes": 68064
+      },
+      {
+        "_path": "lib/plugin/component_keyring_file.so",
+        "path_type": "hardlink",
+        "sha256": "cd2011272cfac295e74aa6085f6aba4e8fbfe329281bf3d34f79ba9dd6094a8a",
+        "sha256_in_prefix": "cd2011272cfac295e74aa6085f6aba4e8fbfe329281bf3d34f79ba9dd6094a8a",
+        "size_in_bytes": 1419040
+      },
+      {
+        "_path": "lib/plugin/component_log_filter_dragnet.so",
+        "path_type": "hardlink",
+        "sha256": "d92b9a9d3e79bacf022963d76e8a3252c6744906edcd3a0417514031df5fe079",
+        "sha256_in_prefix": "d92b9a9d3e79bacf022963d76e8a3252c6744906edcd3a0417514031df5fe079",
+        "size_in_bytes": 86896
+      },
+      {
+        "_path": "lib/plugin/component_log_sink_json.so",
+        "path_type": "hardlink",
+        "sha256": "0f5bec4e38c63817066021415bacd4ea8ea978a06229ec83dff901c28d3c30fb",
+        "sha256_in_prefix": "0f5bec4e38c63817066021415bacd4ea8ea978a06229ec83dff901c28d3c30fb",
+        "size_in_bytes": 89488
+      },
+      {
+        "_path": "lib/plugin/component_log_sink_syseventlog.so",
+        "path_type": "hardlink",
+        "sha256": "0c1305333c6a1c1bc6bd9bebfb39c9f041b5e7e7007708fa252ac81b1cc3fb6c",
+        "sha256_in_prefix": "0c1305333c6a1c1bc6bd9bebfb39c9f041b5e7e7007708fa252ac81b1cc3fb6c",
+        "size_in_bytes": 69920
+      },
+      {
+        "_path": "lib/plugin/component_log_sink_test.so",
+        "path_type": "hardlink",
+        "sha256": "7f7d3c4e28bcfe7efdbed5f070c60b9078b2ed0cef91a5994b333c8adf163ac5",
+        "sha256_in_prefix": "7f7d3c4e28bcfe7efdbed5f070c60b9078b2ed0cef91a5994b333c8adf163ac5",
+        "size_in_bytes": 85904
+      },
+      {
+        "_path": "lib/plugin/component_mysqlbackup.so",
+        "path_type": "hardlink",
+        "sha256": "cee505b43617f01daf1ddb127c96031637f2ae117699bc5968f378aca7ea8dd5",
+        "sha256_in_prefix": "cee505b43617f01daf1ddb127c96031637f2ae117699bc5968f378aca7ea8dd5",
+        "size_in_bytes": 91504
+      },
+      {
+        "_path": "lib/plugin/component_mysqlx_global_reset.so",
+        "path_type": "hardlink",
+        "sha256": "0e655edad4cd9f04156ac24ef2b153c7cd8b006d22bedf50428c0708d2b948da",
+        "sha256_in_prefix": "0e655edad4cd9f04156ac24ef2b153c7cd8b006d22bedf50428c0708d2b948da",
+        "size_in_bytes": 69872
+      },
+      {
+        "_path": "lib/plugin/component_pfs_example.so",
+        "path_type": "hardlink",
+        "sha256": "3cc79fd31fa59784736a7dd5ab4646b7a326a945b548e18b46b309dfb0804e81",
+        "sha256_in_prefix": "3cc79fd31fa59784736a7dd5ab4646b7a326a945b548e18b46b309dfb0804e81",
+        "size_in_bytes": 68512
+      },
+      {
+        "_path": "lib/plugin/component_pfs_example_component_population.so",
+        "path_type": "hardlink",
+        "sha256": "35c35b2fa134f7c26240ebd3b210050a13ef63db4f5f8f7e228fd8bca58141ca",
+        "sha256_in_prefix": "35c35b2fa134f7c26240ebd3b210050a13ef63db4f5f8f7e228fd8bca58141ca",
+        "size_in_bytes": 72624
+      },
+      {
+        "_path": "lib/plugin/component_query_attributes.so",
+        "path_type": "hardlink",
+        "sha256": "6f10519771c14e5d0a4904715ed1088b2e6834ee4d93392fcf12a23d5a90199b",
+        "sha256_in_prefix": "6f10519771c14e5d0a4904715ed1088b2e6834ee4d93392fcf12a23d5a90199b",
+        "size_in_bytes": 68288
+      },
+      {
+        "_path": "lib/plugin/component_reference_cache.so",
+        "path_type": "hardlink",
+        "sha256": "7da9b4659a0368d2cb1421fd625faf9ba34301a11071cb13853cfadf4872fe56",
+        "sha256_in_prefix": "7da9b4659a0368d2cb1421fd625faf9ba34301a11071cb13853cfadf4872fe56",
+        "size_in_bytes": 122064
+      },
+      {
+        "_path": "lib/plugin/component_test_audit_api_message.so",
+        "path_type": "hardlink",
+        "sha256": "8ec96c0f711d6349cdab4de5f24c5fbf0f632cdaedfd9b88b2b7ea8966cb4849",
+        "sha256_in_prefix": "8ec96c0f711d6349cdab4de5f24c5fbf0f632cdaedfd9b88b2b7ea8966cb4849",
+        "size_in_bytes": 67888
+      },
+      {
+        "_path": "lib/plugin/component_test_backup_lock_service.so",
+        "path_type": "hardlink",
+        "sha256": "feaa832e27d9620659a6d44a949f577eeddd941250dde35c0d7bac3bcf7713a9",
+        "sha256_in_prefix": "feaa832e27d9620659a6d44a949f577eeddd941250dde35c0d7bac3bcf7713a9",
+        "size_in_bytes": 50992
+      },
+      {
+        "_path": "lib/plugin/component_test_component_deinit.so",
+        "path_type": "hardlink",
+        "sha256": "4052ee8c43880fda9331e088355a1773975af178e9a91a8f6ccd00a03b748f1b",
+        "sha256_in_prefix": "4052ee8c43880fda9331e088355a1773975af178e9a91a8f6ccd00a03b748f1b",
+        "size_in_bytes": 50880
+      },
+      {
+        "_path": "lib/plugin/component_test_event_tracking_consumer.so",
+        "path_type": "hardlink",
+        "sha256": "60ce67366af09b536b8e9ad195e2a8dac5e4ff1744537b5ad133d16362a3e315",
+        "sha256_in_prefix": "60ce67366af09b536b8e9ad195e2a8dac5e4ff1744537b5ad133d16362a3e315",
+        "size_in_bytes": 102400
+      },
+      {
+        "_path": "lib/plugin/component_test_event_tracking_consumer_a.so",
+        "path_type": "hardlink",
+        "sha256": "58e695f1b3e139038ae0f2dcf1c8cdeae21cfcdd18ef504d47f2bd16685fbb54",
+        "sha256_in_prefix": "58e695f1b3e139038ae0f2dcf1c8cdeae21cfcdd18ef504d47f2bd16685fbb54",
+        "size_in_bytes": 78240
+      },
+      {
+        "_path": "lib/plugin/component_test_event_tracking_consumer_b.so",
+        "path_type": "hardlink",
+        "sha256": "033ecbd9dcee118ee0366007dc220f3c82e6e90d3f30662cdd7b64930675db18",
+        "sha256_in_prefix": "033ecbd9dcee118ee0366007dc220f3c82e6e90d3f30662cdd7b64930675db18",
+        "size_in_bytes": 71344
+      },
+      {
+        "_path": "lib/plugin/component_test_event_tracking_consumer_c.so",
+        "path_type": "hardlink",
+        "sha256": "43218fcf0e0f018731df632be84bf39f7ceabc29d49f7a55878b0e08d203518b",
+        "sha256_in_prefix": "43218fcf0e0f018731df632be84bf39f7ceabc29d49f7a55878b0e08d203518b",
+        "size_in_bytes": 71344
+      },
+      {
+        "_path": "lib/plugin/component_test_event_tracking_producer_a.so",
+        "path_type": "hardlink",
+        "sha256": "f0d4f6510480b10e9ec6307c30ca8fecffb452749e3f6e3b16aea03724162030",
+        "sha256_in_prefix": "f0d4f6510480b10e9ec6307c30ca8fecffb452749e3f6e3b16aea03724162030",
+        "size_in_bytes": 73872
+      },
+      {
+        "_path": "lib/plugin/component_test_event_tracking_producer_b.so",
+        "path_type": "hardlink",
+        "sha256": "e568aff5d0692509b06c7c897947376e15cfc87cbd792d00b75f11b307e55021",
+        "sha256_in_prefix": "e568aff5d0692509b06c7c897947376e15cfc87cbd792d00b75f11b307e55021",
+        "size_in_bytes": 72688
+      },
+      {
+        "_path": "lib/plugin/component_test_execute_prepared_statement.so",
+        "path_type": "hardlink",
+        "sha256": "2077ca194dda83282ceb34c3082cc5b249b6f0fe73e2c3c317c06e2a0c05aaea",
+        "sha256_in_prefix": "2077ca194dda83282ceb34c3082cc5b249b6f0fe73e2c3c317c06e2a0c05aaea",
+        "size_in_bytes": 75648
+      },
+      {
+        "_path": "lib/plugin/component_test_execute_regular_statement.so",
+        "path_type": "hardlink",
+        "sha256": "86e0005b63a5f0327da3bfe1f1534e786216b351d5e0ee6d85129adcb38bd610",
+        "sha256_in_prefix": "86e0005b63a5f0327da3bfe1f1534e786216b351d5e0ee6d85129adcb38bd610",
+        "size_in_bytes": 75008
+      },
+      {
+        "_path": "lib/plugin/component_test_host_application_signal.so",
+        "path_type": "hardlink",
+        "sha256": "36a030e3ea8c7e3c642820191f01efe9f0f7b071bc03e3b9f7dafbbea2bdb001",
+        "sha256_in_prefix": "36a030e3ea8c7e3c642820191f01efe9f0f7b071bc03e3b9f7dafbbea2bdb001",
+        "size_in_bytes": 68304
+      },
+      {
+        "_path": "lib/plugin/component_test_mysql_command_services.so",
+        "path_type": "hardlink",
+        "sha256": "ffea8870b6ac87ccf5c9a4b0a4eafd46911576467648857bba4a07d19e175a97",
+        "sha256_in_prefix": "ffea8870b6ac87ccf5c9a4b0a4eafd46911576467648857bba4a07d19e175a97",
+        "size_in_bytes": 69952
+      },
+      {
+        "_path": "lib/plugin/component_test_mysql_current_thread_reader.so",
+        "path_type": "hardlink",
+        "sha256": "f6caf3dd3b26b7917029b5654cfb2d0c7a406091a6a330b42095e90e1dc465e0",
+        "sha256_in_prefix": "f6caf3dd3b26b7917029b5654cfb2d0c7a406091a6a330b42095e90e1dc465e0",
+        "size_in_bytes": 68240
+      },
+      {
+        "_path": "lib/plugin/component_test_mysql_runtime_error.so",
+        "path_type": "hardlink",
+        "sha256": "0d12dbcecff5c996ed2e223234c3fa53c4552982474d67d4264ede737d0cb4d5",
+        "sha256_in_prefix": "0d12dbcecff5c996ed2e223234c3fa53c4552982474d67d4264ede737d0cb4d5",
+        "size_in_bytes": 68416
+      },
+      {
+        "_path": "lib/plugin/component_test_mysql_signal_handler.so",
+        "path_type": "hardlink",
+        "sha256": "ab62fdbc9e35c9de011a22ed7a2d8a7708ad7b1d3964efb17ea449db08e66d8b",
+        "sha256_in_prefix": "ab62fdbc9e35c9de011a22ed7a2d8a7708ad7b1d3964efb17ea449db08e66d8b",
+        "size_in_bytes": 67760
+      },
+      {
+        "_path": "lib/plugin/component_test_mysql_system_variable_set.so",
+        "path_type": "hardlink",
+        "sha256": "a6cb083f1e20714056ed5a81799a8e5d734e5c0ccb5e69c5003ce0a93b8ebabb",
+        "sha256_in_prefix": "a6cb083f1e20714056ed5a81799a8e5d734e5c0ccb5e69c5003ce0a93b8ebabb",
+        "size_in_bytes": 69392
+      },
+      {
+        "_path": "lib/plugin/component_test_mysql_thd_store_service.so",
+        "path_type": "hardlink",
+        "sha256": "6d433bdcf741f9f6d5127d0ae9aa43c048226f33726e09dc35e0ba1ad47adc56",
+        "sha256_in_prefix": "6d433bdcf741f9f6d5127d0ae9aa43c048226f33726e09dc35e0ba1ad47adc56",
+        "size_in_bytes": 71344
+      },
+      {
+        "_path": "lib/plugin/component_test_pfs_notification.so",
+        "path_type": "hardlink",
+        "sha256": "56c792fd7c018068668961fba26ed8f964fa98883a563d484c1ff7619561a6b5",
+        "sha256_in_prefix": "56c792fd7c018068668961fba26ed8f964fa98883a563d484c1ff7619561a6b5",
+        "size_in_bytes": 102800
+      },
+      {
+        "_path": "lib/plugin/component_test_pfs_resource_group.so",
+        "path_type": "hardlink",
+        "sha256": "b297aabfc47a34580e7b7a3eef1b6d09edc32d2e881333423a1ed30458a09a71",
+        "sha256_in_prefix": "b297aabfc47a34580e7b7a3eef1b6d09edc32d2e881333423a1ed30458a09a71",
+        "size_in_bytes": 100656
+      },
+      {
+        "_path": "lib/plugin/component_test_sensitive_system_variables.so",
+        "path_type": "hardlink",
+        "sha256": "396216ecfcea573ad5de49b819533bf0adba816264db5e17a308cc93cf9b4c80",
+        "sha256_in_prefix": "396216ecfcea573ad5de49b819533bf0adba816264db5e17a308cc93cf9b4c80",
+        "size_in_bytes": 68528
+      },
+      {
+        "_path": "lib/plugin/component_test_server_telemetry_metrics.so",
+        "path_type": "hardlink",
+        "sha256": "32348e94cbb97bb0285580bf872c3a1baf91806aabe02d543cd1f07d2f367844",
+        "sha256_in_prefix": "32348e94cbb97bb0285580bf872c3a1baf91806aabe02d543cd1f07d2f367844",
+        "size_in_bytes": 110288
+      },
+      {
+        "_path": "lib/plugin/component_test_server_telemetry_traces.so",
+        "path_type": "hardlink",
+        "sha256": "ec1ee424878a4a41abce9b9ff8c8f26f50fc5d70cd7385a6dec40be2fc6f62d8",
+        "sha256_in_prefix": "ec1ee424878a4a41abce9b9ff8c8f26f50fc5d70cd7385a6dec40be2fc6f62d8",
+        "size_in_bytes": 98416
+      },
+      {
+        "_path": "lib/plugin/component_test_status_var_reader.so",
+        "path_type": "hardlink",
+        "sha256": "839ca792908a3711a0f7d1b64d4df9c95d350cd4b3ede56fbbedecfd18aca727",
+        "sha256_in_prefix": "839ca792908a3711a0f7d1b64d4df9c95d350cd4b3ede56fbbedecfd18aca727",
+        "size_in_bytes": 70464
+      },
+      {
+        "_path": "lib/plugin/component_test_status_var_service.so",
+        "path_type": "hardlink",
+        "sha256": "321de1432787d34ef374e1b8686e17cab058cfec4edaa7a2172decb47489a95e",
+        "sha256_in_prefix": "321de1432787d34ef374e1b8686e17cab058cfec4edaa7a2172decb47489a95e",
+        "size_in_bytes": 68704
+      },
+      {
+        "_path": "lib/plugin/component_test_status_var_service_int.so",
+        "path_type": "hardlink",
+        "sha256": "d015f5ee3eccc2e1c8c822c309983120024f07c70f380076b5635bb9c15e7e30",
+        "sha256_in_prefix": "d015f5ee3eccc2e1c8c822c309983120024f07c70f380076b5635bb9c15e7e30",
+        "size_in_bytes": 68240
+      },
+      {
+        "_path": "lib/plugin/component_test_status_var_service_reg_only.so",
+        "path_type": "hardlink",
+        "sha256": "d5f79fe0a10d4bf7f0b8a54c062dbe61bef9c5112cc9faca26fe71959f3452aa",
+        "sha256_in_prefix": "d5f79fe0a10d4bf7f0b8a54c062dbe61bef9c5112cc9faca26fe71959f3452aa",
+        "size_in_bytes": 68304
+      },
+      {
+        "_path": "lib/plugin/component_test_status_var_service_str.so",
+        "path_type": "hardlink",
+        "sha256": "06fe709470a070e472ea322479900de94cdbb452832003df9863dd16d02eeba5",
+        "sha256_in_prefix": "06fe709470a070e472ea322479900de94cdbb452832003df9863dd16d02eeba5",
+        "size_in_bytes": 68096
+      },
+      {
+        "_path": "lib/plugin/component_test_status_var_service_unreg_only.so",
+        "path_type": "hardlink",
+        "sha256": "a5557f769c1fc7f1cb1410663f8d8ccc021698271cb97de2cdedecb9426252b8",
+        "sha256_in_prefix": "a5557f769c1fc7f1cb1410663f8d8ccc021698271cb97de2cdedecb9426252b8",
+        "size_in_bytes": 68320
+      },
+      {
+        "_path": "lib/plugin/component_test_string_service.so",
+        "path_type": "hardlink",
+        "sha256": "c620907f4a2385d02bf8f094382f8f9cc046b37fba08ca4c3cef1a552b3455c3",
+        "sha256_in_prefix": "c620907f4a2385d02bf8f094382f8f9cc046b37fba08ca4c3cef1a552b3455c3",
+        "size_in_bytes": 68336
+      },
+      {
+        "_path": "lib/plugin/component_test_string_service_charset.so",
+        "path_type": "hardlink",
+        "sha256": "f948e9ab35154e99c561b0f18f7ca2dbc6b46e2fd364a6f37ba25c592b7c4782",
+        "sha256_in_prefix": "f948e9ab35154e99c561b0f18f7ca2dbc6b46e2fd364a6f37ba25c592b7c4782",
+        "size_in_bytes": 68512
+      },
+      {
+        "_path": "lib/plugin/component_test_string_service_long.so",
+        "path_type": "hardlink",
+        "sha256": "8d387d69b809bf8ee14e24fc51e50075b184ffefa19151a16b31c233cd11a814",
+        "sha256_in_prefix": "8d387d69b809bf8ee14e24fc51e50075b184ffefa19151a16b31c233cd11a814",
+        "size_in_bytes": 68464
+      },
+      {
+        "_path": "lib/plugin/component_test_sys_var_service.so",
+        "path_type": "hardlink",
+        "sha256": "82e0a2a20db43cd30548a6e927a7951d474ab893b108b849165c66cce7687209",
+        "sha256_in_prefix": "82e0a2a20db43cd30548a6e927a7951d474ab893b108b849165c66cce7687209",
+        "size_in_bytes": 68480
+      },
+      {
+        "_path": "lib/plugin/component_test_sys_var_service_int.so",
+        "path_type": "hardlink",
+        "sha256": "d5ae88b8ed38d00a29d25c4d1cec9a508c41d690bc8a0ed7c5363c4e5b07be69",
+        "sha256_in_prefix": "d5ae88b8ed38d00a29d25c4d1cec9a508c41d690bc8a0ed7c5363c4e5b07be69",
+        "size_in_bytes": 68432
+      },
+      {
+        "_path": "lib/plugin/component_test_sys_var_service_same.so",
+        "path_type": "hardlink",
+        "sha256": "3ee5584d3c70e5887e4b85d209435cb43a01db595bc03d88c0c6115ab52227c3",
+        "sha256_in_prefix": "3ee5584d3c70e5887e4b85d209435cb43a01db595bc03d88c0c6115ab52227c3",
+        "size_in_bytes": 68512
+      },
+      {
+        "_path": "lib/plugin/component_test_sys_var_service_str.so",
+        "path_type": "hardlink",
+        "sha256": "314c52a2df6ec39ff68d54960fbc43c058c67e05f2c2cab02edecc3efc4da1cf",
+        "sha256_in_prefix": "314c52a2df6ec39ff68d54960fbc43c058c67e05f2c2cab02edecc3efc4da1cf",
+        "size_in_bytes": 68432
+      },
+      {
+        "_path": "lib/plugin/component_test_system_variable_source.so",
+        "path_type": "hardlink",
+        "sha256": "d5530b846132e720ef60a5fd83004db393d83a6de462382597a38d0ca5062b11",
+        "sha256_in_prefix": "d5530b846132e720ef60a5fd83004db393d83a6de462382597a38d0ca5062b11",
+        "size_in_bytes": 68048
+      },
+      {
+        "_path": "lib/plugin/component_test_table_access.so",
+        "path_type": "hardlink",
+        "sha256": "7243efec0a3cab603e4d9daac2fae0708706ba6e0b89ff23a52c6781a05fbfbc",
+        "sha256_in_prefix": "7243efec0a3cab603e4d9daac2fae0708706ba6e0b89ff23a52c6781a05fbfbc",
+        "size_in_bytes": 71568
+      },
+      {
+        "_path": "lib/plugin/component_test_udf_registration.so",
+        "path_type": "hardlink",
+        "sha256": "c9ae88a89c11b9dcaafa7c1a1df8903e2c52933fc145626fc9545577b8e5a123",
+        "sha256_in_prefix": "c9ae88a89c11b9dcaafa7c1a1df8903e2c52933fc145626fc9545577b8e5a123",
+        "size_in_bytes": 70640
+      },
+      {
+        "_path": "lib/plugin/component_test_udf_services.so",
+        "path_type": "hardlink",
+        "sha256": "e675599ad08929b95b0ac35c305f2c4c5cc7a3563469ae841dc62425e7be02b8",
+        "sha256_in_prefix": "e675599ad08929b95b0ac35c305f2c4c5cc7a3563469ae841dc62425e7be02b8",
+        "size_in_bytes": 100944
+      },
+      {
+        "_path": "lib/plugin/component_udf_reg_3_func.so",
+        "path_type": "hardlink",
+        "sha256": "9696d5e00ed169201d515284452a904159997c1c91a98e04657e7368f5ac39af",
+        "sha256_in_prefix": "9696d5e00ed169201d515284452a904159997c1c91a98e04657e7368f5ac39af",
+        "size_in_bytes": 68544
+      },
+      {
+        "_path": "lib/plugin/component_udf_reg_avg_func.so",
+        "path_type": "hardlink",
+        "sha256": "58bb33c8e17a5cf7f22ecff2d79657f68212e051f44b969e8cdd72db7581beff",
+        "sha256_in_prefix": "58bb33c8e17a5cf7f22ecff2d79657f68212e051f44b969e8cdd72db7581beff",
+        "size_in_bytes": 68256
+      },
+      {
+        "_path": "lib/plugin/component_udf_reg_int_func.so",
+        "path_type": "hardlink",
+        "sha256": "9f687225f2008aad93fa0dbe18631123db3ceb17b589189b725ff488f631ac4a",
+        "sha256_in_prefix": "9f687225f2008aad93fa0dbe18631123db3ceb17b589189b725ff488f631ac4a",
+        "size_in_bytes": 67872
+      },
+      {
+        "_path": "lib/plugin/component_udf_reg_int_same_func.so",
+        "path_type": "hardlink",
+        "sha256": "662be2ea031f02a9fec1b5392274efa4841b4aaa79c76aa2b2a34c1525ec6c7b",
+        "sha256_in_prefix": "662be2ea031f02a9fec1b5392274efa4841b4aaa79c76aa2b2a34c1525ec6c7b",
+        "size_in_bytes": 67888
+      },
+      {
+        "_path": "lib/plugin/component_udf_reg_only_3_func.so",
+        "path_type": "hardlink",
+        "sha256": "1fdec11b8e7499007e22a5e9e57a0b3982c785758be2bc2e52c57714b02c809d",
+        "sha256_in_prefix": "1fdec11b8e7499007e22a5e9e57a0b3982c785758be2bc2e52c57714b02c809d",
+        "size_in_bytes": 68448
+      },
+      {
+        "_path": "lib/plugin/component_udf_reg_real_func.so",
+        "path_type": "hardlink",
+        "sha256": "c3812b8b3ead24b5784c3b8aecb064d6f010bbdea25a2511818cdfdeb497bc8a",
+        "sha256_in_prefix": "c3812b8b3ead24b5784c3b8aecb064d6f010bbdea25a2511818cdfdeb497bc8a",
+        "size_in_bytes": 67920
+      },
+      {
+        "_path": "lib/plugin/component_udf_unreg_3_func.so",
+        "path_type": "hardlink",
+        "sha256": "b6e82597a1963ec8cf40f629bce1b50263dc22cb9fe5e5fc381d19300e25f488",
+        "sha256_in_prefix": "b6e82597a1963ec8cf40f629bce1b50263dc22cb9fe5e5fc381d19300e25f488",
+        "size_in_bytes": 67744
+      },
+      {
+        "_path": "lib/plugin/component_udf_unreg_int_func.so",
+        "path_type": "hardlink",
+        "sha256": "e9c63d35e42fea9e95a434578588195351225f639f9fbc4e19ed14cb02ca80ce",
+        "sha256_in_prefix": "e9c63d35e42fea9e95a434578588195351225f639f9fbc4e19ed14cb02ca80ce",
+        "size_in_bytes": 67744
+      },
+      {
+        "_path": "lib/plugin/component_udf_unreg_real_func.so",
+        "path_type": "hardlink",
+        "sha256": "e88869110f8fb864b650bfbaf38fcd36b6715e1a292fddfdec9ad84ce6937b88",
+        "sha256_in_prefix": "e88869110f8fb864b650bfbaf38fcd36b6715e1a292fddfdec9ad84ce6937b88",
+        "size_in_bytes": 67760
+      },
+      {
+        "_path": "lib/plugin/component_validate_password.so",
+        "path_type": "hardlink",
+        "sha256": "3dae65464b325bf39e2c02dcaf6ae1770e3ed73a3d33cb2fb87570473440f39e",
+        "sha256_in_prefix": "3dae65464b325bf39e2c02dcaf6ae1770e3ed73a3d33cb2fb87570473440f39e",
+        "size_in_bytes": 121200
+      },
+      {
+        "_path": "lib/plugin/conflicting_variables.so",
+        "path_type": "hardlink",
+        "sha256": "6472e2b85d148bb75cf44031daabe786b6a11c92e9281eec18ec1542374c6589",
+        "sha256_in_prefix": "6472e2b85d148bb75cf44031daabe786b6a11c92e9281eec18ec1542374c6589",
+        "size_in_bytes": 50880
+      },
+      {
+        "_path": "lib/plugin/connection_control.so",
+        "path_type": "hardlink",
+        "sha256": "1aab8757e663f4e739bba02c51fef0b1d1e3a69d9aa648d12a521408e9bb6fff",
+        "sha256_in_prefix": "1aab8757e663f4e739bba02c51fef0b1d1e3a69d9aa648d12a521408e9bb6fff",
+        "size_in_bytes": 104064
+      },
+      {
+        "_path": "lib/plugin/daemon_example.ini",
+        "path_type": "hardlink",
+        "sha256": "69d0dec9145eeabb6d3b38bc3e907ed4448fce1a7fa2f93ecdb7a85eb9a0ce10",
+        "sha256_in_prefix": "69d0dec9145eeabb6d3b38bc3e907ed4448fce1a7fa2f93ecdb7a85eb9a0ce10",
+        "size_in_bytes": 1410
+      },
+      {
+        "_path": "lib/plugin/ddl_rewriter.so",
+        "path_type": "hardlink",
+        "sha256": "46e517d143d30b227a61fd6a134c41f11bc216303a9c2b6fc8df60de5b40f0a8",
+        "sha256_in_prefix": "46e517d143d30b227a61fd6a134c41f11bc216303a9c2b6fc8df60de5b40f0a8",
+        "size_in_bytes": 146736
+      },
+      {
+        "_path": "lib/plugin/group_replication.so",
+        "path_type": "hardlink",
+        "sha256": "0ec22516a3ae29fa3ff7ae9bbdbd128b40a97c548d683f29aeaea0666d9e273c",
+        "sha256_in_prefix": "0ec22516a3ae29fa3ff7ae9bbdbd128b40a97c548d683f29aeaea0666d9e273c",
+        "size_in_bytes": 2560944
+      },
+      {
+        "_path": "lib/plugin/ha_example.so",
+        "path_type": "hardlink",
+        "sha256": "fc3a6e9e0537a5fc120c771eb33bf669ec681b943deb5f221e3e21c2f8301f76",
+        "sha256_in_prefix": "fc3a6e9e0537a5fc120c771eb33bf669ec681b943deb5f221e3e21c2f8301f76",
+        "size_in_bytes": 84096
+      },
+      {
+        "_path": "lib/plugin/ha_mock.so",
+        "path_type": "hardlink",
+        "sha256": "732431ee78208920d3d502a0fc9456c039a3971086c23d88605e1e02817f736c",
+        "sha256_in_prefix": "732431ee78208920d3d502a0fc9456c039a3971086c23d88605e1e02817f736c",
+        "size_in_bytes": 86416
+      },
+      {
+        "_path": "lib/plugin/keyring_udf.so",
+        "path_type": "hardlink",
+        "sha256": "581462667ba4adb65595279464207e21b43b0f5de859b5dd52810338cc00df77",
+        "sha256_in_prefix": "581462667ba4adb65595279464207e21b43b0f5de859b5dd52810338cc00df77",
+        "size_in_bytes": 70912
+      },
+      {
+        "_path": "lib/plugin/libdaemon_example.so",
+        "path_type": "hardlink",
+        "sha256": "f721b60c041ea61d019d4848d5f958975b85e428f54aa512a2b84432bd1b91e2",
+        "sha256_in_prefix": "f721b60c041ea61d019d4848d5f958975b85e428f54aa512a2b84432bd1b91e2",
+        "size_in_bytes": 69200
+      },
+      {
+        "_path": "lib/plugin/libtest_framework.so",
+        "path_type": "hardlink",
+        "sha256": "a228e31c4907b6df163da607cb90aac95f7010bb65da9039afe70a1ff3dd6ebc",
+        "sha256_in_prefix": "a228e31c4907b6df163da607cb90aac95f7010bb65da9039afe70a1ff3dd6ebc",
+        "size_in_bytes": 50816
+      },
+      {
+        "_path": "lib/plugin/libtest_services.so",
+        "path_type": "hardlink",
+        "sha256": "7a7e673e0ea56b427fa44e00993f6830586674b94c89e7e30bd05a27f57b2b7f",
+        "sha256_in_prefix": "7a7e673e0ea56b427fa44e00993f6830586674b94c89e7e30bd05a27f57b2b7f",
+        "size_in_bytes": 68768
+      },
+      {
+        "_path": "lib/plugin/libtest_services_threaded.so",
+        "path_type": "hardlink",
+        "sha256": "09f7c820913cb79698383738fa45b65661bfeb261816c16dcbf983a5e24ffc90",
+        "sha256_in_prefix": "09f7c820913cb79698383738fa45b65661bfeb261816c16dcbf983a5e24ffc90",
+        "size_in_bytes": 69440
+      },
+      {
+        "_path": "lib/plugin/libtest_session_attach.so",
+        "path_type": "hardlink",
+        "sha256": "8d97342be7928a185a37b13673a03480d154007f65f55bd9e72cdb329aca1b6c",
+        "sha256_in_prefix": "8d97342be7928a185a37b13673a03480d154007f65f55bd9e72cdb329aca1b6c",
+        "size_in_bytes": 93888
+      },
+      {
+        "_path": "lib/plugin/libtest_session_detach.so",
+        "path_type": "hardlink",
+        "sha256": "1af51b8cd433030dfee0b965161c23f9dd3568f46cff3fe910ff7150ce05e224",
+        "sha256_in_prefix": "1af51b8cd433030dfee0b965161c23f9dd3568f46cff3fe910ff7150ce05e224",
+        "size_in_bytes": 70992
+      },
+      {
+        "_path": "lib/plugin/libtest_session_in_thd.so",
+        "path_type": "hardlink",
+        "sha256": "942862a2e8f2d27297ac9b9c10609b9584be31ef8151550a6a4a45fb914f44c9",
+        "sha256_in_prefix": "942862a2e8f2d27297ac9b9c10609b9584be31ef8151550a6a4a45fb914f44c9",
+        "size_in_bytes": 69696
+      },
+      {
+        "_path": "lib/plugin/libtest_session_info.so",
+        "path_type": "hardlink",
+        "sha256": "8396fc781eaa3da742d042fe702ab217ff08bec69bc5f8c7ab479dc6ac3ab6ce",
+        "sha256_in_prefix": "8396fc781eaa3da742d042fe702ab217ff08bec69bc5f8c7ab479dc6ac3ab6ce",
+        "size_in_bytes": 88000
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_2_sessions.so",
+        "path_type": "hardlink",
+        "sha256": "9d9eecdca8ba1fbfa764f1bfcf490d6e2467ac7001ca45602ecebd10309403f8",
+        "sha256_in_prefix": "9d9eecdca8ba1fbfa764f1bfcf490d6e2467ac7001ca45602ecebd10309403f8",
+        "size_in_bytes": 71328
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_all_col_types.so",
+        "path_type": "hardlink",
+        "sha256": "8e61505d9db3fa32330300bcd93f0041223d1c8ad010e2bfc1f267ed2b2cbba4",
+        "sha256_in_prefix": "8e61505d9db3fa32330300bcd93f0041223d1c8ad010e2bfc1f267ed2b2cbba4",
+        "size_in_bytes": 88016
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_cmds_1.so",
+        "path_type": "hardlink",
+        "sha256": "03b7c429584799dd8db6f87400d9dab387c9fdd3066069ec5ef44c77c7f457fb",
+        "sha256_in_prefix": "03b7c429584799dd8db6f87400d9dab387c9fdd3066069ec5ef44c77c7f457fb",
+        "size_in_bytes": 89248
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_commit.so",
+        "path_type": "hardlink",
+        "sha256": "e29324bfa744dce357b3757f3cbe7de6eeae72fc103a26b034f1a82c247f23aa",
+        "sha256_in_prefix": "e29324bfa744dce357b3757f3cbe7de6eeae72fc103a26b034f1a82c247f23aa",
+        "size_in_bytes": 88000
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_complex.so",
+        "path_type": "hardlink",
+        "sha256": "87f2e2dcdb62a9dc9b011c091a6aaa397f05a9734edc2c4087db9a94909f424b",
+        "sha256_in_prefix": "87f2e2dcdb62a9dc9b011c091a6aaa397f05a9734edc2c4087db9a94909f424b",
+        "size_in_bytes": 88336
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_errors.so",
+        "path_type": "hardlink",
+        "sha256": "99bce3f656db8ca0fa383e1c80c8f43d71ede6c125e3d09245e30ae32eafb36c",
+        "sha256_in_prefix": "99bce3f656db8ca0fa383e1c80c8f43d71ede6c125e3d09245e30ae32eafb36c",
+        "size_in_bytes": 88080
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_lock.so",
+        "path_type": "hardlink",
+        "sha256": "458bfca76866a1a839747b3dca5380a8935f53d35a9491a78df870e50765db2c",
+        "sha256_in_prefix": "458bfca76866a1a839747b3dca5380a8935f53d35a9491a78df870e50765db2c",
+        "size_in_bytes": 87728
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_processlist.so",
+        "path_type": "hardlink",
+        "sha256": "388ffb8d90523ae08b9b7811bf4609d93fd683f776d7d3c98b30b6efc93404f4",
+        "sha256_in_prefix": "388ffb8d90523ae08b9b7811bf4609d93fd683f776d7d3c98b30b6efc93404f4",
+        "size_in_bytes": 71216
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_replication.so",
+        "path_type": "hardlink",
+        "sha256": "29f3e651442194f0dc4588be61102132031215119b8d64ed0eb14f451d093a0b",
+        "sha256_in_prefix": "29f3e651442194f0dc4588be61102132031215119b8d64ed0eb14f451d093a0b",
+        "size_in_bytes": 87824
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_reset_connection.so",
+        "path_type": "hardlink",
+        "sha256": "1c79c9f206effbebf0ce36116f3021ae19467cd3fb381714b1a08e7ead06e8b9",
+        "sha256_in_prefix": "1c79c9f206effbebf0ce36116f3021ae19467cd3fb381714b1a08e7ead06e8b9",
+        "size_in_bytes": 71696
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_shutdown.so",
+        "path_type": "hardlink",
+        "sha256": "638ac62d6f78552276c267e025450601d60c38fc1d2841573810f2a529e048dd",
+        "sha256_in_prefix": "638ac62d6f78552276c267e025450601d60c38fc1d2841573810f2a529e048dd",
+        "size_in_bytes": 71344
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_sleep_is_connected.so",
+        "path_type": "hardlink",
+        "sha256": "51f8429f6da85bedba5f06a829e7a2a39c51f3ae9ded9c23996227d1896ba11d",
+        "sha256_in_prefix": "51f8429f6da85bedba5f06a829e7a2a39c51f3ae9ded9c23996227d1896ba11d",
+        "size_in_bytes": 95456
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_sqlmode.so",
+        "path_type": "hardlink",
+        "sha256": "c705a1f791b8c298b254c3703413b101485db5acdd32efa7b76ae80885bd6264",
+        "sha256_in_prefix": "c705a1f791b8c298b254c3703413b101485db5acdd32efa7b76ae80885bd6264",
+        "size_in_bytes": 88080
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_stmt.so",
+        "path_type": "hardlink",
+        "sha256": "4ddf8a5567d945bd60cd0ca84b7d7193acbec9ef88b7d508e3da1e7f269a370e",
+        "sha256_in_prefix": "4ddf8a5567d945bd60cd0ca84b7d7193acbec9ef88b7d508e3da1e7f269a370e",
+        "size_in_bytes": 109056
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_stored_procedures_functions.so",
+        "path_type": "hardlink",
+        "sha256": "065a96f05f1eb3e2de562bfb96bbbee4ad42d4b03b779cb148557db495b3c69f",
+        "sha256_in_prefix": "065a96f05f1eb3e2de562bfb96bbbee4ad42d4b03b779cb148557db495b3c69f",
+        "size_in_bytes": 88080
+      },
+      {
+        "_path": "lib/plugin/libtest_sql_views_triggers.so",
+        "path_type": "hardlink",
+        "sha256": "a87fd98e60e6098150e9c29d506a011a870f6dca5d5f3a2f1b7d649502b4bff7",
+        "sha256_in_prefix": "a87fd98e60e6098150e9c29d506a011a870f6dca5d5f3a2f1b7d649502b4bff7",
+        "size_in_bytes": 88048
+      },
+      {
+        "_path": "lib/plugin/libtest_x_sessions_deinit.so",
+        "path_type": "hardlink",
+        "sha256": "52cae61964d550e8c3d24ef3cbe397edda6b3647f52043291a333f747ff794e5",
+        "sha256_in_prefix": "52cae61964d550e8c3d24ef3cbe397edda6b3647f52043291a333f747ff794e5",
+        "size_in_bytes": 69792
+      },
+      {
+        "_path": "lib/plugin/libtest_x_sessions_init.so",
+        "path_type": "hardlink",
+        "sha256": "cc59fa34ec9f51edfd4fc92f7afda0878a77b6d3d327c1192b3136eec4d0006b",
+        "sha256_in_prefix": "cc59fa34ec9f51edfd4fc92f7afda0878a77b6d3d327c1192b3136eec4d0006b",
+        "size_in_bytes": 70400
+      },
+      {
+        "_path": "lib/plugin/locking_service.so",
+        "path_type": "hardlink",
+        "sha256": "e6876a873b6c4819b15f7f40da460a7e821c84791014fcf1aefa822bc592cf67",
+        "sha256_in_prefix": "e6876a873b6c4819b15f7f40da460a7e821c84791014fcf1aefa822bc592cf67",
+        "size_in_bytes": 67760
+      },
+      {
+        "_path": "lib/plugin/mypluglib.so",
+        "path_type": "hardlink",
+        "sha256": "14b18b6ec468b552eb10f5bf7809885335b1e04d7a28d93aae181768e85030f0",
+        "sha256_in_prefix": "14b18b6ec468b552eb10f5bf7809885335b1e04d7a28d93aae181768e85030f0",
+        "size_in_bytes": 68192
+      },
+      {
+        "_path": "lib/plugin/mysql_clone.so",
+        "path_type": "hardlink",
+        "sha256": "1ea87ab000632d06a20f11dc8ad0e57193832d137b96c13f79df9e32f4ea7d4a",
+        "sha256_in_prefix": "1ea87ab000632d06a20f11dc8ad0e57193832d137b96c13f79df9e32f4ea7d4a",
+        "size_in_bytes": 208352
+      },
+      {
+        "_path": "lib/plugin/mysql_no_login.so",
+        "path_type": "hardlink",
+        "sha256": "79e7e7a3cf227cf76a662ec9be21f61fd2b011ec75c639181d8067dd15f67110",
+        "sha256_in_prefix": "79e7e7a3cf227cf76a662ec9be21f61fd2b011ec75c639181d8067dd15f67110",
+        "size_in_bytes": 50912
+      },
+      {
+        "_path": "lib/plugin/pfs_example_plugin_employee.so",
+        "path_type": "hardlink",
+        "sha256": "26e58bf3eb9e452586b7741220997f9853adaef18a97dfb5dfdf9077f2a98c9b",
+        "sha256_in_prefix": "26e58bf3eb9e452586b7741220997f9853adaef18a97dfb5dfdf9077f2a98c9b",
+        "size_in_bytes": 115728
+      },
+      {
+        "_path": "lib/plugin/qa_auth_client.so",
+        "path_type": "hardlink",
+        "sha256": "8367f3a033999f26ad1220e6b086552b03b6b6915e6c76151291767f65a2fda9",
+        "sha256_in_prefix": "8367f3a033999f26ad1220e6b086552b03b6b6915e6c76151291767f65a2fda9",
+        "size_in_bytes": 67392
+      },
+      {
+        "_path": "lib/plugin/qa_auth_interface.so",
+        "path_type": "hardlink",
+        "sha256": "a8d06aec0ba9dcb7a09058564de21d3c4d798a3ac95d054b14d18e1203945921",
+        "sha256_in_prefix": "a8d06aec0ba9dcb7a09058564de21d3c4d798a3ac95d054b14d18e1203945921",
+        "size_in_bytes": 68064
+      },
+      {
+        "_path": "lib/plugin/qa_auth_server.so",
+        "path_type": "hardlink",
+        "sha256": "b00ed14da7a8f94f532a38802d1a8fd4943993875aa07cdf76c260ce7511bdd4",
+        "sha256_in_prefix": "b00ed14da7a8f94f532a38802d1a8fd4943993875aa07cdf76c260ce7511bdd4",
+        "size_in_bytes": 67840
+      },
+      {
+        "_path": "lib/plugin/replication_observers_example_plugin.so",
+        "path_type": "hardlink",
+        "sha256": "ed07fe2cf0ed4480e68c8e4ee0293aa04c9861c7b5e2919f18d4f6e756142c57",
+        "sha256_in_prefix": "ed07fe2cf0ed4480e68c8e4ee0293aa04c9861c7b5e2919f18d4f6e756142c57",
+        "size_in_bytes": 145056
+      },
+      {
+        "_path": "lib/plugin/rewrite_example.so",
+        "path_type": "hardlink",
+        "sha256": "531815262bf2be63aa5a64354ad172c81d029dbccf8940ba6bd8f97b390281db",
+        "sha256_in_prefix": "531815262bf2be63aa5a64354ad172c81d029dbccf8940ba6bd8f97b390281db",
+        "size_in_bytes": 67744
+      },
+      {
+        "_path": "lib/plugin/rewriter.so",
+        "path_type": "hardlink",
+        "sha256": "e33c66083c53e0ba84dfa6dc94876a259c6e015c89fb4e412b1ede0d2ea2e643",
+        "sha256_in_prefix": "e33c66083c53e0ba84dfa6dc94876a259c6e015c89fb4e412b1ede0d2ea2e643",
+        "size_in_bytes": 103104
+      },
+      {
+        "_path": "lib/plugin/semisync_master.so",
+        "path_type": "hardlink",
+        "sha256": "a5f89999dd3a11058e99b8564578dbf906f8f4e6d76115d5b4ba38c7e934c02c",
+        "sha256_in_prefix": "a5f89999dd3a11058e99b8564578dbf906f8f4e6d76115d5b4ba38c7e934c02c",
+        "size_in_bytes": 137744
+      },
+      {
+        "_path": "lib/plugin/semisync_replica.so",
+        "path_type": "hardlink",
+        "sha256": "edaed04d1cdaf643688ff78d7361c2c58d84ae3117725cde687eb11296be953c",
+        "sha256_in_prefix": "edaed04d1cdaf643688ff78d7361c2c58d84ae3117725cde687eb11296be953c",
+        "size_in_bytes": 75712
+      },
+      {
+        "_path": "lib/plugin/semisync_slave.so",
+        "path_type": "hardlink",
+        "sha256": "a13445edd7734180d7d0d930f37586ce89e4dd5a1098c3d0e0723bdfa2ee5b08",
+        "sha256_in_prefix": "a13445edd7734180d7d0d930f37586ce89e4dd5a1098c3d0e0723bdfa2ee5b08",
+        "size_in_bytes": 75968
+      },
+      {
+        "_path": "lib/plugin/semisync_source.so",
+        "path_type": "hardlink",
+        "sha256": "5ee6c0e826abaca7fbad50195bdf82dd64fe917a68593f2f4fb3df576a86f2c9",
+        "sha256_in_prefix": "5ee6c0e826abaca7fbad50195bdf82dd64fe917a68593f2f4fb3df576a86f2c9",
+        "size_in_bytes": 137504
+      },
+      {
+        "_path": "lib/plugin/test_security_context.so",
+        "path_type": "hardlink",
+        "sha256": "f7d0f8f658d7b045dd3ac429b2f400bc6b541932c1cb15d0aab7c6e76a6eb791",
+        "sha256_in_prefix": "f7d0f8f658d7b045dd3ac429b2f400bc6b541932c1cb15d0aab7c6e76a6eb791",
+        "size_in_bytes": 67792
+      },
+      {
+        "_path": "lib/plugin/test_services_command_services.so",
+        "path_type": "hardlink",
+        "sha256": "8b8dcbcfe787f616bbd173374818f5a87e575285004748f8bfbc8d17b39b6b03",
+        "sha256_in_prefix": "8b8dcbcfe787f616bbd173374818f5a87e575285004748f8bfbc8d17b39b6b03",
+        "size_in_bytes": 70352
+      },
+      {
+        "_path": "lib/plugin/test_services_host_application_signal.so",
+        "path_type": "hardlink",
+        "sha256": "8db4b53bd05642d5e50aebb4b0ca345889522d04446af8204de60decfe29e83e",
+        "sha256_in_prefix": "8db4b53bd05642d5e50aebb4b0ca345889522d04446af8204de60decfe29e83e",
+        "size_in_bytes": 68640
+      },
+      {
+        "_path": "lib/plugin/test_services_plugin_registry.so",
+        "path_type": "hardlink",
+        "sha256": "bff28bbb5f0f9d42143054caf554e249b4031ae6e9ba35c829ebf6bf77f3eb98",
+        "sha256_in_prefix": "bff28bbb5f0f9d42143054caf554e249b4031ae6e9ba35c829ebf6bf77f3eb98",
+        "size_in_bytes": 68432
+      },
+      {
+        "_path": "lib/plugin/test_udf_services.so",
+        "path_type": "hardlink",
+        "sha256": "e5fd2139951e603259575f0ef91eda1eefebc5c0142a8aa8c0945911d220bdb8",
+        "sha256_in_prefix": "e5fd2139951e603259575f0ef91eda1eefebc5c0142a8aa8c0945911d220bdb8",
+        "size_in_bytes": 104016
+      },
+      {
+        "_path": "lib/plugin/udf_example.so",
+        "path_type": "hardlink",
+        "sha256": "d5c58693829d2a5440f9bb793ffc6ed747e838e290b748a0afebd818ea8aa7c7",
+        "sha256_in_prefix": "d5c58693829d2a5440f9bb793ffc6ed747e838e290b748a0afebd818ea8aa7c7",
+        "size_in_bytes": 71568
+      },
+      {
+        "_path": "lib/plugin/validate_password.so",
+        "path_type": "hardlink",
+        "sha256": "cc90cbb121f155d07e703740e4f92ab26101c067c9e2fb8db6ba6dcfc6bd73a9",
+        "sha256_in_prefix": "cc90cbb121f155d07e703740e4f92ab26101c067c9e2fb8db6ba6dcfc6bd73a9",
+        "size_in_bytes": 96576
+      },
+      {
+        "_path": "lib/plugin/version_token.so",
+        "path_type": "hardlink",
+        "sha256": "1cdce029c062b61f1527f698cac05cde0464c8dce0280577f548f3ffdfb345fa",
+        "sha256_in_prefix": "1cdce029c062b61f1527f698cac05cde0464c8dce0280577f548f3ffdfb345fa",
+        "size_in_bytes": 104416
+      },
+      {
+        "_path": "mysql/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "5019fa5874789f2636d1fb285a06edb4b3359763b801f390538ef88c80f47d9e",
+        "sha256_in_prefix": "5019fa5874789f2636d1fb285a06edb4b3359763b801f390538ef88c80f47d9e",
+        "size_in_bytes": 282183
+      },
+      {
+        "_path": "mysql/README",
+        "path_type": "hardlink",
+        "sha256": "d385ba545c6f9c709f45bc2e1bd4b86c16c6e863a7cce493c17e60e399c52a98",
+        "sha256_in_prefix": "d385ba545c6f9c709f45bc2e1bd4b86c16c6e863a7cce493c17e60e399c52a98",
+        "size_in_bytes": 666
+      },
+      {
+        "_path": "mysql/support-files/mysql-log-rotate",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "f6919593041da7231d64a3c8015534490dab72bcdd1d3bd1439b087039be3635",
+        "sha256_in_prefix": "3dbef46124ba7dc707671bee6866522321c41132430f2a1c0bdcc06ca4d84511",
+        "size_in_bytes": 3272
+      },
+      {
+        "_path": "mysql/support-files/mysql.server",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "ac49dacf8fee0dbfd04a983559e6eefeb268f9fb82286907720fa09443d56d3a",
+        "sha256_in_prefix": "e9388a180e2d5fe84ce66084cd2ede171950bd620634823bd269f86b7a3ea7c4",
+        "size_in_bytes": 12019
+      },
+      {
+        "_path": "mysql/support-files/mysqld_multi.server",
+        "path_type": "hardlink",
+        "sha256": "6a784dc307a8d540759d9a5f1fe96f06714435db47c7aef0fcb94c36d73a8e48",
+        "sha256_in_prefix": "6a784dc307a8d540759d9a5f1fe96f06714435db47c7aef0fcb94c36d73a8e48",
+        "size_in_bytes": 1061
+      },
+      {
+        "_path": "mysqlrouter-log-rotate",
+        "path_type": "hardlink",
+        "sha256": "dbcce7c0142b24fbb0b558d9bd46c18054008f4cbdad801d11e0db35edfce971",
+        "sha256_in_prefix": "dbcce7c0142b24fbb0b558d9bd46c18054008f4cbdad801d11e0db35edfce971",
+        "size_in_bytes": 1672
+      },
+      {
+        "_path": "share/aclocal/mysql.m4",
+        "path_type": "hardlink",
+        "sha256": "a3b3e52bf1c8328d0fe4ee8ee0073702bbd1fbc3cd9b19c396d8b048e95172a1",
+        "sha256_in_prefix": "a3b3e52bf1c8328d0fe4ee8ee0073702bbd1fbc3cd9b19c396d8b048e95172a1",
+        "size_in_bytes": 4575
+      },
+      {
+        "_path": "share/doc/mysql/INFO_BIN",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1b0z2kpc5k/croot/mysql_1722527842162/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "73b1a89779f081356238eaf5671782f549113920ed14dea1d259c3ef519844db",
+        "sha256_in_prefix": "423e7b1cd896a43707f412682a161bf7d4a73e68df789acbf6bbbca52cbb9996",
+        "size_in_bytes": 11547
+      },
+      {
+        "_path": "share/doc/mysql/INFO_SRC",
+        "path_type": "hardlink",
+        "sha256": "6ab2fde89a2ba74c1401318f4e813e82a1e5c2312667daa4ca7379beef86e0e9",
+        "sha256_in_prefix": "6ab2fde89a2ba74c1401318f4e813e82a1e5c2312667daa4ca7379beef86e0e9",
+        "size_in_bytes": 186
+      },
+      {
+        "_path": "share/man/man1/comp_err.1",
+        "path_type": "hardlink",
+        "sha256": "d179e7f4e68ccc8b3031eb9b964487a1724ad13b31c9df036d7e309a4251c7a2",
+        "sha256_in_prefix": "d179e7f4e68ccc8b3031eb9b964487a1724ad13b31c9df036d7e309a4251c7a2",
+        "size_in_bytes": 8008
+      },
+      {
+        "_path": "share/man/man1/ibd2sdi.1",
+        "path_type": "hardlink",
+        "sha256": "4e220f271082eadcb2d9f05516e9d89deee49a294fba46b1ab3603a80f9dbd98",
+        "sha256_in_prefix": "4e220f271082eadcb2d9f05516e9d89deee49a294fba46b1ab3603a80f9dbd98",
+        "size_in_bytes": 15350
+      },
+      {
+        "_path": "share/man/man1/innochecksum.1",
+        "path_type": "hardlink",
+        "sha256": "f7a1e12260ddfe3173be0113764c7a6416ebba30ccc9e7cbc1e390c4b9d3e3c3",
+        "sha256_in_prefix": "f7a1e12260ddfe3173be0113764c7a6416ebba30ccc9e7cbc1e390c4b9d3e3c3",
+        "size_in_bytes": 20376
+      },
+      {
+        "_path": "share/man/man1/my_print_defaults.1",
+        "path_type": "hardlink",
+        "sha256": "86cdd90ab80b4b7fd15dbe4e262153a7eeca9ca501c8961952fe94df75604b72",
+        "sha256_in_prefix": "86cdd90ab80b4b7fd15dbe4e262153a7eeca9ca501c8961952fe94df75604b72",
+        "size_in_bytes": 6798
+      },
+      {
+        "_path": "share/man/man1/myisam_ftdump.1",
+        "path_type": "hardlink",
+        "sha256": "4a59a5296e2aa1480d2003abb7ca8279aaca45a304031be7ec04b5efd3b6e9c6",
+        "sha256_in_prefix": "4a59a5296e2aa1480d2003abb7ca8279aaca45a304031be7ec04b5efd3b6e9c6",
+        "size_in_bytes": 6372
+      },
+      {
+        "_path": "share/man/man1/myisamchk.1",
+        "path_type": "hardlink",
+        "sha256": "6d167f9ff004e57e28689694e7d7c03c194c75f7ed9e7946836d65a6d42393d9",
+        "sha256_in_prefix": "6d167f9ff004e57e28689694e7d7c03c194c75f7ed9e7946836d65a6d42393d9",
+        "size_in_bytes": 53580
+      },
+      {
+        "_path": "share/man/man1/myisamlog.1",
+        "path_type": "hardlink",
+        "sha256": "1f8f8ade96b1346701a19078d684d551a99da9836342acfac5ac4de1b3cd9aa2",
+        "sha256_in_prefix": "1f8f8ade96b1346701a19078d684d551a99da9836342acfac5ac4de1b3cd9aa2",
+        "size_in_bytes": 5274
+      },
+      {
+        "_path": "share/man/man1/myisampack.1",
+        "path_type": "hardlink",
+        "sha256": "1057fd6e1f6448daab797acfc785dfa19ac05f2f777d3890361efe13f7df35bb",
+        "sha256_in_prefix": "1057fd6e1f6448daab797acfc785dfa19ac05f2f777d3890361efe13f7df35bb",
+        "size_in_bytes": 20757
+      },
+      {
+        "_path": "share/man/man1/mysql.1",
+        "path_type": "hardlink",
+        "sha256": "60a267aa27169ee860960b38af9cabc4fea8fc83e7fb41d4d35b75d73980c01e",
+        "sha256_in_prefix": "60a267aa27169ee860960b38af9cabc4fea8fc83e7fb41d4d35b75d73980c01e",
+        "size_in_bytes": 125773
+      },
+      {
+        "_path": "share/man/man1/mysql.server.1",
+        "path_type": "hardlink",
+        "sha256": "2a87fbdf2480a25fe35114dce043c29988226532d4052c08b116980e7eb1ca59",
+        "sha256_in_prefix": "2a87fbdf2480a25fe35114dce043c29988226532d4052c08b116980e7eb1ca59",
+        "size_in_bytes": 10357
+      },
+      {
+        "_path": "share/man/man1/mysql_config.1",
+        "path_type": "hardlink",
+        "sha256": "f2ee4bd27cef549e3e89740dd338f106ec6b508487785a1e64c4f2c164e4e3e3",
+        "sha256_in_prefix": "f2ee4bd27cef549e3e89740dd338f106ec6b508487785a1e64c4f2c164e4e3e3",
+        "size_in_bytes": 6994
+      },
+      {
+        "_path": "share/man/man1/mysql_config_editor.1",
+        "path_type": "hardlink",
+        "sha256": "6c6f1347c3eea384687a173da9cbae38243e348d9051ce5d4b8c8734bab31cb1",
+        "sha256_in_prefix": "6c6f1347c3eea384687a173da9cbae38243e348d9051ce5d4b8c8734bab31cb1",
+        "size_in_bytes": 23497
+      },
+      {
+        "_path": "share/man/man1/mysql_secure_installation.1",
+        "path_type": "hardlink",
+        "sha256": "42003af55c443c2b58f671db91b3db8aedb1de04a4777c4b483ea750ac37802e",
+        "sha256_in_prefix": "42003af55c443c2b58f671db91b3db8aedb1de04a4777c4b483ea750ac37802e",
+        "size_in_bytes": 15313
+      },
+      {
+        "_path": "share/man/man1/mysql_tzinfo_to_sql.1",
+        "path_type": "hardlink",
+        "sha256": "3e67b35ad2f0571621958b363d77d10e71c8b834bb1ad9cb2db7711f18a3e731",
+        "sha256_in_prefix": "3e67b35ad2f0571621958b363d77d10e71c8b834bb1ad9cb2db7711f18a3e731",
+        "size_in_bytes": 4478
+      },
+      {
+        "_path": "share/man/man1/mysqladmin.1",
+        "path_type": "hardlink",
+        "sha256": "140dee5649faae4c208278f41fa1da06c89fef3ba77dc28b5c735758c1734420",
+        "sha256_in_prefix": "140dee5649faae4c208278f41fa1da06c89fef3ba77dc28b5c735758c1734420",
+        "size_in_bytes": 40770
+      },
+      {
+        "_path": "share/man/man1/mysqlbinlog.1",
+        "path_type": "hardlink",
+        "sha256": "8ade5f226b11588e01f10318d8998daba852ff843588ce22ebdc2b16fd9aee3c",
+        "sha256_in_prefix": "8ade5f226b11588e01f10318d8998daba852ff843588ce22ebdc2b16fd9aee3c",
+        "size_in_bytes": 92249
+      },
+      {
+        "_path": "share/man/man1/mysqlcheck.1",
+        "path_type": "hardlink",
+        "sha256": "5eedcce67b1e72acad8f53de24f5b80e731facc3e74ba631613b17eb6c0a045a",
+        "sha256_in_prefix": "5eedcce67b1e72acad8f53de24f5b80e731facc3e74ba631613b17eb6c0a045a",
+        "size_in_bytes": 37267
+      },
+      {
+        "_path": "share/man/man1/mysqld_multi.1",
+        "path_type": "hardlink",
+        "sha256": "bfc97e42657a8f0f066bb612d7f4dc6beffc83f5786102874955b0068a4c9cff",
+        "sha256_in_prefix": "bfc97e42657a8f0f066bb612d7f4dc6beffc83f5786102874955b0068a4c9cff",
+        "size_in_bytes": 18274
+      },
+      {
+        "_path": "share/man/man1/mysqld_safe.1",
+        "path_type": "hardlink",
+        "sha256": "ed6dc3e77f787cbadb97297ef91d9b53b1ee3fc5d7c6e67e9743df4c878ed18c",
+        "sha256_in_prefix": "ed6dc3e77f787cbadb97297ef91d9b53b1ee3fc5d7c6e67e9743df4c878ed18c",
+        "size_in_bytes": 24968
+      },
+      {
+        "_path": "share/man/man1/mysqldump.1",
+        "path_type": "hardlink",
+        "sha256": "7963b0747af07fcac04209217d5b4389233868580b38b780978cf516ef455b44",
+        "sha256_in_prefix": "7963b0747af07fcac04209217d5b4389233868580b38b780978cf516ef455b44",
+        "size_in_bytes": 98420
+      },
+      {
+        "_path": "share/man/man1/mysqldumpslow.1",
+        "path_type": "hardlink",
+        "sha256": "1751dc0a62d85899b5d42b7b010683160cbb3c50d7e837a21ff2c99893626474",
+        "sha256_in_prefix": "1751dc0a62d85899b5d42b7b010683160cbb3c50d7e837a21ff2c99893626474",
+        "size_in_bytes": 7204
+      },
+      {
+        "_path": "share/man/man1/mysqlimport.1",
+        "path_type": "hardlink",
+        "sha256": "5142b7015d9c4a1e589b7d15f35c16288590e87c3dc74380188b226427f4a47b",
+        "sha256_in_prefix": "5142b7015d9c4a1e589b7d15f35c16288590e87c3dc74380188b226427f4a47b",
+        "size_in_bytes": 33984
+      },
+      {
+        "_path": "share/man/man1/mysqlman.1",
+        "path_type": "hardlink",
+        "sha256": "72d31c5d65c9ae676ed9fef72a5f6684748f67049ba19354d5c0bc3fcdad2460",
+        "sha256_in_prefix": "72d31c5d65c9ae676ed9fef72a5f6684748f67049ba19354d5c0bc3fcdad2460",
+        "size_in_bytes": 675
+      },
+      {
+        "_path": "share/man/man1/mysqlrouter.1",
+        "path_type": "hardlink",
+        "sha256": "1a5adefb9c55177504fd0c6ea40e03f3a8cff934734bb143b5c1d76ee41c1d86",
+        "sha256_in_prefix": "1a5adefb9c55177504fd0c6ea40e03f3a8cff934734bb143b5c1d76ee41c1d86",
+        "size_in_bytes": 54408
+      },
+      {
+        "_path": "share/man/man1/mysqlrouter_passwd.1",
+        "path_type": "hardlink",
+        "sha256": "c83e088ad0a9f391e97f0ef2c34eb9a89fada6a2feef43df606849a58e8a29f0",
+        "sha256_in_prefix": "c83e088ad0a9f391e97f0ef2c34eb9a89fada6a2feef43df606849a58e8a29f0",
+        "size_in_bytes": 3285
+      },
+      {
+        "_path": "share/man/man1/mysqlrouter_plugin_info.1",
+        "path_type": "hardlink",
+        "sha256": "a52a6cb84a8ba327fffddb8dd1059cc62e6ae08a25c95c5727c9b57d5dc4c4ef",
+        "sha256_in_prefix": "a52a6cb84a8ba327fffddb8dd1059cc62e6ae08a25c95c5727c9b57d5dc4c4ef",
+        "size_in_bytes": 3355
+      },
+      {
+        "_path": "share/man/man1/mysqlshow.1",
+        "path_type": "hardlink",
+        "sha256": "a9ee44656c6f9d229eaa98d2b6e233c035efc9aea33699b067228156206e02cf",
+        "sha256_in_prefix": "a9ee44656c6f9d229eaa98d2b6e233c035efc9aea33699b067228156206e02cf",
+        "size_in_bytes": 29833
+      },
+      {
+        "_path": "share/man/man1/mysqlslap.1",
+        "path_type": "hardlink",
+        "sha256": "236ccd4a454096224342a376638c5949f579d60d8eb8630924cdbab2446ab4e2",
+        "sha256_in_prefix": "236ccd4a454096224342a376638c5949f579d60d8eb8630924cdbab2446ab4e2",
+        "size_in_bytes": 40067
+      },
+      {
+        "_path": "share/man/man1/perror.1",
+        "path_type": "hardlink",
+        "sha256": "256eb94c0629ce232a1e45b0318cd7658999373ec307789176561d5aed4049db",
+        "sha256_in_prefix": "256eb94c0629ce232a1e45b0318cd7658999373ec307789176561d5aed4049db",
+        "size_in_bytes": 4649
+      },
+      {
+        "_path": "share/man/man8/mysqld.8",
+        "path_type": "hardlink",
+        "sha256": "c6f102a17e22fcf09ae83d7c2166f601457d6a3c569eb0fb714e4208db68b71d",
+        "sha256_in_prefix": "c6f102a17e22fcf09ae83d7c2166f601457d6a3c569eb0fb714e4208db68b71d",
+        "size_in_bytes": 4247
+      },
+      {
+        "_path": "share/mysql/bulgarian/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "c1d26adec52f6dbcdb6c582db4da1b4a0b7baecfb5764cba913d57b509dfc668",
+        "sha256_in_prefix": "c1d26adec52f6dbcdb6c582db4da1b4a0b7baecfb5764cba913d57b509dfc668",
+        "size_in_bytes": 408629
+      },
+      {
+        "_path": "share/mysql/charsets/Index.xml",
+        "path_type": "hardlink",
+        "sha256": "83551523a5a33b33cda26207440f7c63421154526b78a96375a931840b6a32a2",
+        "sha256_in_prefix": "83551523a5a33b33cda26207440f7c63421154526b78a96375a931840b6a32a2",
+        "size_in_bytes": 19525
+      },
+      {
+        "_path": "share/mysql/charsets/README",
+        "path_type": "hardlink",
+        "sha256": "0af62ce1ae651e980006f2e9d29bd2f24e1cd18c6a0b1914e9c437cc80e990ab",
+        "sha256_in_prefix": "0af62ce1ae651e980006f2e9d29bd2f24e1cd18c6a0b1914e9c437cc80e990ab",
+        "size_in_bytes": 1749
+      },
+      {
+        "_path": "share/mysql/charsets/armscii8.xml",
+        "path_type": "hardlink",
+        "sha256": "cc950a4e20e4ea7872617998fd2e4b84ac2621cfc858a116e30d15c0ef96fe01",
+        "sha256_in_prefix": "cc950a4e20e4ea7872617998fd2e4b84ac2621cfc858a116e30d15c0ef96fe01",
+        "size_in_bytes": 6011
+      },
+      {
+        "_path": "share/mysql/charsets/ascii.xml",
+        "path_type": "hardlink",
+        "sha256": "e69e77baf42575872759f4ea3fb917417e7eec713fe2ebac9629e5ff2ce73886",
+        "sha256_in_prefix": "e69e77baf42575872759f4ea3fb917417e7eec713fe2ebac9629e5ff2ce73886",
+        "size_in_bytes": 5997
+      },
+      {
+        "_path": "share/mysql/charsets/cp1250.xml",
+        "path_type": "hardlink",
+        "sha256": "266e0d10e5c6f7fd648f52ebc40c11f365a9cce7e97b28cadce93c3bc650e42c",
+        "sha256_in_prefix": "266e0d10e5c6f7fd648f52ebc40c11f365a9cce7e97b28cadce93c3bc650e42c",
+        "size_in_bytes": 8726
+      },
+      {
+        "_path": "share/mysql/charsets/cp1251.xml",
+        "path_type": "hardlink",
+        "sha256": "705fb5f8a471f566443c34bad6ca9a99fd1503205ad3a801944487e2c316ec32",
+        "sha256_in_prefix": "705fb5f8a471f566443c34bad6ca9a99fd1503205ad3a801944487e2c316ec32",
+        "size_in_bytes": 8812
+      },
+      {
+        "_path": "share/mysql/charsets/cp1256.xml",
+        "path_type": "hardlink",
+        "sha256": "9cca5256e9873080a4033434bede2eea68492629de7a38da5cb2fb7cbdf30fdb",
+        "sha256_in_prefix": "9cca5256e9873080a4033434bede2eea68492629de7a38da5cb2fb7cbdf30fdb",
+        "size_in_bytes": 6060
+      },
+      {
+        "_path": "share/mysql/charsets/cp1257.xml",
+        "path_type": "hardlink",
+        "sha256": "c14c5981c339762ae356b25b7a07644fcafc617d36b50570d7ca64134f9295e0",
+        "sha256_in_prefix": "c14c5981c339762ae356b25b7a07644fcafc617d36b50570d7ca64134f9295e0",
+        "size_in_bytes": 9393
+      },
+      {
+        "_path": "share/mysql/charsets/cp850.xml",
+        "path_type": "hardlink",
+        "sha256": "015fe14c2bb867ce4ba7935c24eea07d18b0930b84ef6a94732db0414299f41f",
+        "sha256_in_prefix": "015fe14c2bb867ce4ba7935c24eea07d18b0930b84ef6a94732db0414299f41f",
+        "size_in_bytes": 5997
+      },
+      {
+        "_path": "share/mysql/charsets/cp852.xml",
+        "path_type": "hardlink",
+        "sha256": "eeb31fb7ba0d90dc3a62a5f182702338ead59ec29144cbb53d6a7a1ace0b8d9c",
+        "sha256_in_prefix": "eeb31fb7ba0d90dc3a62a5f182702338ead59ec29144cbb53d6a7a1ace0b8d9c",
+        "size_in_bytes": 6013
+      },
+      {
+        "_path": "share/mysql/charsets/cp866.xml",
+        "path_type": "hardlink",
+        "sha256": "772a691ed737da8d1c7cd5fca09685dd9c0378857c3bbc24e3b5567fd24e2cc0",
+        "sha256_in_prefix": "772a691ed737da8d1c7cd5fca09685dd9c0378857c3bbc24e3b5567fd24e2cc0",
+        "size_in_bytes": 6104
+      },
+      {
+        "_path": "share/mysql/charsets/dec8.xml",
+        "path_type": "hardlink",
+        "sha256": "b32f97f56a3960d5400d0fa7192c4f351cbef270d9e393543280b0fcff2c44a6",
+        "sha256_in_prefix": "b32f97f56a3960d5400d0fa7192c4f351cbef270d9e393543280b0fcff2c44a6",
+        "size_in_bytes": 7020
+      },
+      {
+        "_path": "share/mysql/charsets/geostd8.xml",
+        "path_type": "hardlink",
+        "sha256": "2e48b5d8c45da98fa0ec25ef3a135c4d30da4b42c55c7b84461e2a1370443d64",
+        "sha256_in_prefix": "2e48b5d8c45da98fa0ec25ef3a135c4d30da4b42c55c7b84461e2a1370443d64",
+        "size_in_bytes": 6007
+      },
+      {
+        "_path": "share/mysql/charsets/greek.xml",
+        "path_type": "hardlink",
+        "sha256": "9d339917eb427e497f823d49b130b91f2e414ca590845c84621528d6cde41843",
+        "sha256_in_prefix": "9d339917eb427e497f823d49b130b91f2e414ca590845c84621528d6cde41843",
+        "size_in_bytes": 6219
+      },
+      {
+        "_path": "share/mysql/charsets/hebrew.xml",
+        "path_type": "hardlink",
+        "sha256": "287d26cfedc3c6c78d34c2607e7c89d91c321f0b48f265a6e9ec165c2eafd26e",
+        "sha256_in_prefix": "287d26cfedc3c6c78d34c2607e7c89d91c321f0b48f265a6e9ec165c2eafd26e",
+        "size_in_bytes": 6002
+      },
+      {
+        "_path": "share/mysql/charsets/hp8.xml",
+        "path_type": "hardlink",
+        "sha256": "7ee13224173cf0fa52af6551630d1f451ef50d4c5012afb49f7826fabe8a4e0f",
+        "sha256_in_prefix": "7ee13224173cf0fa52af6551630d1f451ef50d4c5012afb49f7826fabe8a4e0f",
+        "size_in_bytes": 5993
+      },
+      {
+        "_path": "share/mysql/charsets/keybcs2.xml",
+        "path_type": "hardlink",
+        "sha256": "d446a109d0a504b38947cbcb36d1abc9118fe4033032c229fbc8cf6fcbd79c96",
+        "sha256_in_prefix": "d446a109d0a504b38947cbcb36d1abc9118fe4033032c229fbc8cf6fcbd79c96",
+        "size_in_bytes": 6020
+      },
+      {
+        "_path": "share/mysql/charsets/koi8r.xml",
+        "path_type": "hardlink",
+        "sha256": "6550b306b04fc5f69a233ea2b0427954d2ab7741e02927da479e84e94edb0a2d",
+        "sha256_in_prefix": "6550b306b04fc5f69a233ea2b0427954d2ab7741e02927da479e84e94edb0a2d",
+        "size_in_bytes": 6001
+      },
+      {
+        "_path": "share/mysql/charsets/koi8u.xml",
+        "path_type": "hardlink",
+        "sha256": "d0a8cb1de11ef570e0521d010b34cfcb74638e66137b378114c186dd4b053a5f",
+        "sha256_in_prefix": "d0a8cb1de11ef570e0521d010b34cfcb74638e66137b378114c186dd4b053a5f",
+        "size_in_bytes": 7023
+      },
+      {
+        "_path": "share/mysql/charsets/latin1.xml",
+        "path_type": "hardlink",
+        "sha256": "8afb9f20b76373031ef84dc077425c4ba1297ff2b54aeb077bd3f93d3d56117c",
+        "sha256_in_prefix": "8afb9f20b76373031ef84dc077425c4ba1297ff2b54aeb077bd3f93d3d56117c",
+        "size_in_bytes": 10301
+      },
+      {
+        "_path": "share/mysql/charsets/latin2.xml",
+        "path_type": "hardlink",
+        "sha256": "1aa687e3d26e85ede104bb62983b49aa845f29e7263f6283b645299716140d7e",
+        "sha256_in_prefix": "1aa687e3d26e85ede104bb62983b49aa845f29e7263f6283b645299716140d7e",
+        "size_in_bytes": 7723
+      },
+      {
+        "_path": "share/mysql/charsets/latin5.xml",
+        "path_type": "hardlink",
+        "sha256": "acb916bf820b088ce9e1a012e9a2fe5f19f52c4b66cbc425e08c1e79ab75a21b",
+        "sha256_in_prefix": "acb916bf820b088ce9e1a012e9a2fe5f19f52c4b66cbc425e08c1e79ab75a21b",
+        "size_in_bytes": 6000
+      },
+      {
+        "_path": "share/mysql/charsets/latin7.xml",
+        "path_type": "hardlink",
+        "sha256": "64cf99567127b03faa171d928bbcacd2451f000e3729f64763c1dc67c65378e7",
+        "sha256_in_prefix": "64cf99567127b03faa171d928bbcacd2451f000e3729f64763c1dc67c65378e7",
+        "size_in_bytes": 7929
+      },
+      {
+        "_path": "share/mysql/charsets/macce.xml",
+        "path_type": "hardlink",
+        "sha256": "f474df7e0e0845a88ba7aabb04562705a2ab00185d037a7b1e12070f0d61fff0",
+        "sha256_in_prefix": "f474df7e0e0845a88ba7aabb04562705a2ab00185d037a7b1e12070f0d61fff0",
+        "size_in_bytes": 8538
+      },
+      {
+        "_path": "share/mysql/charsets/macroman.xml",
+        "path_type": "hardlink",
+        "sha256": "c9c87850ae02bbd426c977a3635329b144f604274d7f6c4f7ff76b38a204ec50",
+        "sha256_in_prefix": "c9c87850ae02bbd426c977a3635329b144f604274d7f6c4f7ff76b38a204ec50",
+        "size_in_bytes": 8549
+      },
+      {
+        "_path": "share/mysql/charsets/swe7.xml",
+        "path_type": "hardlink",
+        "sha256": "a5ac2e1374340b7d636fde7a6a5139e3902e73d40588006e705142ede90c0711",
+        "sha256_in_prefix": "a5ac2e1374340b7d636fde7a6a5139e3902e73d40588006e705142ede90c0711",
+        "size_in_bytes": 7021
+      },
+      {
+        "_path": "share/mysql/czech/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "f58f23230782d8ca07f1b56f349cab935a4337a5e1a3c1b3877abf71aea79fbd",
+        "sha256_in_prefix": "f58f23230782d8ca07f1b56f349cab935a4337a5e1a3c1b3877abf71aea79fbd",
+        "size_in_bytes": 408551
+      },
+      {
+        "_path": "share/mysql/danish/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "a7f70fbc813fab298684e47d6d1355c38e1b579de2e144bc7a891d861057c064",
+        "sha256_in_prefix": "a7f70fbc813fab298684e47d6d1355c38e1b579de2e144bc7a891d861057c064",
+        "size_in_bytes": 408525
+      },
+      {
+        "_path": "share/mysql/dictionary.txt",
+        "path_type": "hardlink",
+        "sha256": "d031a0f90d77595abe02112adf69a86560e3168ba379fd450176a8e070763077",
+        "sha256_in_prefix": "d031a0f90d77595abe02112adf69a86560e3168ba379fd450176a8e070763077",
+        "size_in_bytes": 25575
+      },
+      {
+        "_path": "share/mysql/dutch/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "09829c3060d80dded2617333ffee7363c8d652c82f38ab51046dc6adc90ee1fe",
+        "sha256_in_prefix": "09829c3060d80dded2617333ffee7363c8d652c82f38ab51046dc6adc90ee1fe",
+        "size_in_bytes": 409539
+      },
+      {
+        "_path": "share/mysql/english/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "6d08154dddcdb0e17d077580c8cda4b7cc572c90f251304f0088b2c15a71cbe3",
+        "sha256_in_prefix": "6d08154dddcdb0e17d077580c8cda4b7cc572c90f251304f0088b2c15a71cbe3",
+        "size_in_bytes": 407792
+      },
+      {
+        "_path": "share/mysql/estonian/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "d33d2f95ad60178d103ad0915bb143e415cbe5b70a5bf3a845e68bf47b333370",
+        "sha256_in_prefix": "d33d2f95ad60178d103ad0915bb143e415cbe5b70a5bf3a845e68bf47b333370",
+        "size_in_bytes": 408056
+      },
+      {
+        "_path": "share/mysql/french/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "140e908acf7faf051dc3494d830a7061b4f725f68741464db03604ef56ebb4a4",
+        "sha256_in_prefix": "140e908acf7faf051dc3494d830a7061b4f725f68741464db03604ef56ebb4a4",
+        "size_in_bytes": 409165
+      },
+      {
+        "_path": "share/mysql/german/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "0928803b7a97de61bfc6e3c95989812fd258874193b33c6085bf1b49065db6d6",
+        "sha256_in_prefix": "0928803b7a97de61bfc6e3c95989812fd258874193b33c6085bf1b49065db6d6",
+        "size_in_bytes": 415351
+      },
+      {
+        "_path": "share/mysql/greek/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "2d696ece300c0e3752e760a365835833854aaf78eb784f2e1257091ee24469b8",
+        "sha256_in_prefix": "2d696ece300c0e3752e760a365835833854aaf78eb784f2e1257091ee24469b8",
+        "size_in_bytes": 414583
+      },
+      {
+        "_path": "share/mysql/hungarian/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "f7daca0de55962ae883abe8ca6ee3c9eca76e49c360a26b3f1eb245daa6977bd",
+        "sha256_in_prefix": "f7daca0de55962ae883abe8ca6ee3c9eca76e49c360a26b3f1eb245daa6977bd",
+        "size_in_bytes": 408433
+      },
+      {
+        "_path": "share/mysql/install_rewriter.sql",
+        "path_type": "hardlink",
+        "sha256": "01ee5b81f6a0013845dc368281f6c2e19ccaa5fc06643f78fc81c2212074faab",
+        "sha256_in_prefix": "01ee5b81f6a0013845dc368281f6c2e19ccaa5fc06643f78fc81c2212074faab",
+        "size_in_bytes": 2267
+      },
+      {
+        "_path": "share/mysql/italian/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "813d024b986e57e3fbf9fc235eed5fca762f69bec4736eb7b92c1dee4744da1a",
+        "sha256_in_prefix": "813d024b986e57e3fbf9fc235eed5fca762f69bec4736eb7b92c1dee4744da1a",
+        "size_in_bytes": 409536
+      },
+      {
+        "_path": "share/mysql/japanese/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "6b471320bcbc1a68131a64ab0c535f376471469c959beec1a264958f458dd609",
+        "sha256_in_prefix": "6b471320bcbc1a68131a64ab0c535f376471469c959beec1a264958f458dd609",
+        "size_in_bytes": 415161
+      },
+      {
+        "_path": "share/mysql/korean/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "7e850acfd5cdc75aeb8b25155e23a5ce9000aeca8fdab13fdc1e3dcc9753135e",
+        "sha256_in_prefix": "7e850acfd5cdc75aeb8b25155e23a5ce9000aeca8fdab13fdc1e3dcc9753135e",
+        "size_in_bytes": 410832
+      },
+      {
+        "_path": "share/mysql/messages_to_clients.txt",
+        "path_type": "hardlink",
+        "sha256": "d68fdeaf4f24f15271ec6ee542df94dfe54072798c41fd05953c2287fb665825",
+        "sha256_in_prefix": "d68fdeaf4f24f15271ec6ee542df94dfe54072798c41fd05953c2287fb665825",
+        "size_in_bytes": 644666
+      },
+      {
+        "_path": "share/mysql/messages_to_error_log.txt",
+        "path_type": "hardlink",
+        "sha256": "61ba8f070432caad5615f56b47b948f5337aa7927354239023a4e8fdfaf37021",
+        "sha256_in_prefix": "61ba8f070432caad5615f56b47b948f5337aa7927354239023a4e8fdfaf37021",
+        "size_in_bytes": 415548
+      },
+      {
+        "_path": "share/mysql/norwegian-ny/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "fd10fbfb2b132d0c438e462bd04f0fd4a9bfe29c8d363063b3adec1c3ebbf82f",
+        "sha256_in_prefix": "fd10fbfb2b132d0c438e462bd04f0fd4a9bfe29c8d363063b3adec1c3ebbf82f",
+        "size_in_bytes": 407915
+      },
+      {
+        "_path": "share/mysql/norwegian/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "d0f9e7892e10076d172e8cc1ca4770a42051b05915b4d2dd41bb110dae80dea2",
+        "sha256_in_prefix": "d0f9e7892e10076d172e8cc1ca4770a42051b05915b4d2dd41bb110dae80dea2",
+        "size_in_bytes": 407862
+      },
+      {
+        "_path": "share/mysql/polish/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "0c1ad8934db9b07e902ab2d2868d5a23721798c7c9cbd5bdeaac900348209368",
+        "sha256_in_prefix": "0c1ad8934db9b07e902ab2d2868d5a23721798c7c9cbd5bdeaac900348209368",
+        "size_in_bytes": 408721
+      },
+      {
+        "_path": "share/mysql/portuguese/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "c2104570dafd79b50690a72e4daab34d7e8701d39f977d861fd6f3306b0a5ebf",
+        "sha256_in_prefix": "c2104570dafd79b50690a72e4daab34d7e8701d39f977d861fd6f3306b0a5ebf",
+        "size_in_bytes": 410683
+      },
+      {
+        "_path": "share/mysql/romanian/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "e2dcc5962896081de2cadfa0ebe845c4d3a859bf46274146a4798d19c32375b8",
+        "sha256_in_prefix": "e2dcc5962896081de2cadfa0ebe845c4d3a859bf46274146a4798d19c32375b8",
+        "size_in_bytes": 409504
+      },
+      {
+        "_path": "share/mysql/russian/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "34868035ff348b341da3fcc936a7e6f5cb785ac6e3a2ff4fcbff1f14b20984fb",
+        "sha256_in_prefix": "34868035ff348b341da3fcc936a7e6f5cb785ac6e3a2ff4fcbff1f14b20984fb",
+        "size_in_bytes": 422977
+      },
+      {
+        "_path": "share/mysql/serbian/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "557294c2832e7892a2ba194bfd875dff5e433f0446821015c827e543b3442efe",
+        "sha256_in_prefix": "557294c2832e7892a2ba194bfd875dff5e433f0446821015c827e543b3442efe",
+        "size_in_bytes": 410124
+      },
+      {
+        "_path": "share/mysql/slovak/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "5536ffa79af7ab2bfc90b88fe605e53360213f465d7006b88d70ec13320caf7c",
+        "sha256_in_prefix": "5536ffa79af7ab2bfc90b88fe605e53360213f465d7006b88d70ec13320caf7c",
+        "size_in_bytes": 408318
+      },
+      {
+        "_path": "share/mysql/spanish/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "c95f962f32467f1f9b18a420304f6bfbe96e6c2c42a8c4f258eeae47e497df68",
+        "sha256_in_prefix": "c95f962f32467f1f9b18a420304f6bfbe96e6c2c42a8c4f258eeae47e497df68",
+        "size_in_bytes": 409392
+      },
+      {
+        "_path": "share/mysql/swedish/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "18037b5a70f66142749db7886bf21170770643178670faed37248dffbfa19a9c",
+        "sha256_in_prefix": "18037b5a70f66142749db7886bf21170770643178670faed37248dffbfa19a9c",
+        "size_in_bytes": 408605
+      },
+      {
+        "_path": "share/mysql/ukrainian/errmsg.sys",
+        "path_type": "hardlink",
+        "sha256": "437cd180e9b2ca9af80dc417836d65a379875353921fff71d37bb78346401345",
+        "sha256_in_prefix": "437cd180e9b2ca9af80dc417836d65a379875353921fff71d37bb78346401345",
+        "size_in_bytes": 417600
+      },
+      {
+        "_path": "share/mysql/uninstall_rewriter.sql",
+        "path_type": "hardlink",
+        "sha256": "68efdd58d99a5687dc558183e9a88dddb33e7c7287d7e1964417b021128701b4",
+        "sha256_in_prefix": "68efdd58d99a5687dc558183e9a88dddb33e7c7287d7e1964417b021128701b4",
+        "size_in_bytes": 1299
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "f6c87bb7087bfc4e5605904cdf4905c7d2a2abca9e62f61020b0bc1bdf35a289",
+  "size": 64430825,
+  "subdir": "osx-arm64",
+  "timestamp": 1722529068000,
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/mysql-8.4.0-h3a6587f_1.conda",
+  "version": "8.4.0"
+}
